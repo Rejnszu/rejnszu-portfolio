@@ -8,7 +8,13 @@ const AnimatedPages = (props) => {
       initial={{ x: "-100%", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: "100%", opacity: 0 }}
-      transition={{ ease: "linear", duration: 0.6 }}
+      transition={{
+        ease: "linear",
+        duration: 0.6,
+        opacity: {
+          duration: 0.3,
+        },
+      }}
     >
       {props.children}
     </motion.div>

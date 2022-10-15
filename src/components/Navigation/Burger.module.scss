@@ -12,6 +12,7 @@
   z-index: 200;
   &:hover span {
     transform: scale(1.1);
+    background-color: var(--helper-color-2);
   }
 }
 .burger span {

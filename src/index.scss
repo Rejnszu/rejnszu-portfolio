@@ -8,7 +8,7 @@
 :root {
   --main-color: black;
   --helper-color-1: white;
-  --helper-color-2: rgb(177, 177, 177);
+  --helper-color-2: rgb(95, 19, 95);
 }
 body {
   padding: 0;
@@ -42,15 +42,12 @@ h2,
 p {
   margin: 0;
 }
-.h1-heading {
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 2rem;
+.center-item {
+  display: flex;
+  justify-content: center;
 }
-.h2-heading {
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
+.section-padding {
+  padding-top: 4rem;
 }
 
 @media only screen and (max-width: 1200px) {
