@@ -1,0 +1,33 @@
+.code-skills {
+  background-color: var(--main-color);
+  color: white;
+  height: 100vh;
+}
+.skills {
+  margin-top: 10rem;
+}
+.skills__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 100px;
+  margin: auto;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  max-width: 95%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .skills__list {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+@media only screen and (max-width: 650px) {
+  .skills__list {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+@media only screen and (max-width: 400px) {
+  .skills__list {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}

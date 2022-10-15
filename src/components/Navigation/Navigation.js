@@ -5,15 +5,16 @@ import { motion } from "framer-motion";
 
 const Navigation = (props) => {
   return (
-    <motion.nav
-    // key="navigation"
-    // initial={{ opacity: 0 }}
-    // animate={{ opacity: 1 }}
-    // exit={{ opacity: 0 }}
-    // transition={{ duration: 0.2 }}
-    >
+    // <motion.nav
+    // // key="navigation"
+    // // initial={{ opacity: 0 }}
+    // // animate={{ opacity: 1 }}
+    // // exit={{ opacity: 0 }}
+    // // transition={{ duration: 0.2 }}
+    // >
+    <header>
       <div className={styles.backdrop} onClick={props.onClick}></div>
-      <div className={styles.navigation} onClick={props.onClick}>
+      <nav className={styles.navigation} onClick={props.onClick}>
         <ul className={styles.navigation__list}>
           <Link to={"/omnie"}>
             <li className={styles["index-5"]}>O mnie</li>
@@ -34,8 +35,9 @@ const Navigation = (props) => {
             <li className={styles["index-1"]}>Kontakt</li>
           </Link>
         </ul>
-      </div>
-    </motion.nav>
+      </nav>
+    </header>
+    // </motion.nav>
   );
 };
 

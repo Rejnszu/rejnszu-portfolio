@@ -1,0 +1,28 @@
+.skills__list__item {
+  max-width: 100%;
+}
+.skills__list__item__name {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.skills__list__item__level {
+  padding: 0.25rem;
+  height: 40px;
+  width: 200px;
+  max-width: 95%;
+  margin: auto;
+  border: 2px solid var(--helper-color-1);
+  border-radius: 3px;
+  &:hover {
+  }
+}
+.level__filling {
+  color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}

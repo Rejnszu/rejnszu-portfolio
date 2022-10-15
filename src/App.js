@@ -2,10 +2,10 @@ import { useState } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import Burger from "./components/Navigation/Burger";
 import { Routes, Route, useLocation } from "react-router-dom";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutMe/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import PracticalSkills from "./pages/PracticalSkills";
-import CodeSkills from "./pages/CodeSkills";
+import CodeSkills from "./pages/CodeSkills/CodeSkills";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
 function App() {
