@@ -1,0 +1,22 @@
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  height: 1.5rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 200;
+  &:hover span {
+    transform: scale(1.1);
+  }
+}
+.burger span {
+  width: 100%;
+  height: 3px;
+  transition: all 0.3s;
+  background-color: var(--helper-color-1);
+}
