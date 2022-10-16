@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rejnszu-portfolio/static/css/main.dc2e9e2c.css",
-    "main.js": "/rejnszu-portfolio/static/js/main.6946247d.js",
+    "main.js": "/rejnszu-portfolio/static/js/main.901cb134.js",
     "static/media/musify-min.png": "/rejnszu-portfolio/static/media/musify-min.dcb4b6c0f2d5a659660f.png",
     "index.html": "/rejnszu-portfolio/index.html",
     "main.dc2e9e2c.css.map": "/rejnszu-portfolio/static/css/main.dc2e9e2c.css.map",
-    "main.6946247d.js.map": "/rejnszu-portfolio/static/js/main.6946247d.js.map"
+    "main.901cb134.js.map": "/rejnszu-portfolio/static/js/main.901cb134.js.map"
   },
   "entrypoints": [
     "static/css/main.dc2e9e2c.css",
-    "static/js/main.6946247d.js"
+    "static/js/main.901cb134.js"
   ]
 }
