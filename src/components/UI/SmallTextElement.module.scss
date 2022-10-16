@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+}
+.text {
+  max-width: 100%;
+  padding: 2rem 0.5rem;
+  position: relative;
+  isolation: isolate;
+  margin: 3rem 1rem;
+  font-size: clamp(0.8rem, 5vw, 1.2rem);
+  & span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+
+    background-color: var(--helper-color-2--darker);
+    z-index: -1;
+  }
+}

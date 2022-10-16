@@ -47,7 +47,7 @@ const SkillItem = (props) => {
           key={index}
           initial={{ width: 0 }}
           animate={{ width: fillingWidth }}
-          transition={{ delay: 0.9, duration: 0.3 }}
+          transition={{ delay: 0.9, duration: 0.3, ease: "linear" }}
           className={styles["level__filling"]}
         >
           {percent}

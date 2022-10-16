@@ -31,7 +31,10 @@
   margin: auto;
   border: 2px solid var(--helper-color-2);
   border-radius: 3px;
-  transition: box-shadow 0.3s;
+  transition: all 0.3s;
+  &:hover {
+    border-color: var(--helper-color-2--brighter);
+  }
 }
 .level__filling {
   color: var(--helper-color-2);

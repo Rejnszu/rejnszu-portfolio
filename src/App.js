@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Burger from "./components/Navigation/Burger";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import PracticalSkills from "./pages/PracticalSkills";
 import CodeSkills from "./pages/CodeSkills/CodeSkills";
 import Contact from "./pages/Contact";

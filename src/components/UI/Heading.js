@@ -5,20 +5,36 @@ const Heading = (props) => {
   return (
     <motion.div
       key={props.name}
-      animate={{ scale: [0, 1, 0.7, 1] }}
+      animate={{ scale: [0, 1.2, 1] }}
       transition={{
         ease: "easeInOut",
         delay: 0.5,
-        times: [0, 0.2, 0.5, 1],
+        times: [0, 0.5, 1],
         duration: 1,
       }}
       className={styles["heading-center"]}
     >
       <h1 className={styles.heading}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <motion.span
+          initial={{ width: 0 }}
+          animate={{ width: "30px" }}
+          transition={{ duration: 0.5, delay: 1 }}
+        ></motion.span>
+        <motion.span
+          initial={{ height: 0 }}
+          animate={{ height: "30px" }}
+          transition={{ duration: 0.5, delay: 1 }}
+        ></motion.span>
+        <motion.span
+          initial={{ width: 0 }}
+          animate={{ width: "30px" }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+        ></motion.span>
+        <motion.span
+          initial={{ height: 0 }}
+          animate={{ height: "30px" }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+        ></motion.span>
         {props.text}
       </h1>
     </motion.div>

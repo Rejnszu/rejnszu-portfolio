@@ -3,6 +3,7 @@ import AnimatedPages from "../../components/UI/AnimatedPages";
 import styles from "./CodeSkills.module.scss";
 import SkillItem from "./SkillItem";
 import Heading from "../../components/UI/Heading";
+import SmallTextElement from "../../components/UI/SmallTextElement";
 const skills = [
   { name: "HTML", percent: "80%" },
   { name: "CSS", percent: "80%" },
@@ -21,6 +22,7 @@ const CodeSkills = () => {
     <AnimatedPages page="codeskills">
       <section className={`${styles["code-skills"]} section-padding`}>
         <Heading name="aboutme-heading" text="Umiejętności praktyczne" />
+
         <div className={styles["skills"]}>
           <ul className={styles["skills__list"]}>
             {skills.map((skill, index) => {
@@ -35,6 +37,9 @@ const CodeSkills = () => {
             })}
           </ul>
         </div>
+        <SmallTextElement flexPosition="center">
+          Ocena jest oczywiście subiektywna.
+        </SmallTextElement>
       </section>
     </AnimatedPages>
   );
