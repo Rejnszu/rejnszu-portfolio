@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rejnszu-portfolio/static/css/main.dc2e9e2c.css",
+    "main.js": "/rejnszu-portfolio/static/js/main.66b8b76c.js",
+    "static/media/musify-min.png": "/rejnszu-portfolio/static/media/musify-min.dcb4b6c0f2d5a659660f.png",
+    "index.html": "/rejnszu-portfolio/index.html",
+    "main.dc2e9e2c.css.map": "/rejnszu-portfolio/static/css/main.dc2e9e2c.css.map",
+    "main.66b8b76c.js.map": "/rejnszu-portfolio/static/js/main.66b8b76c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc2e9e2c.css",
+    "static/js/main.66b8b76c.js"
+  ]
+}
