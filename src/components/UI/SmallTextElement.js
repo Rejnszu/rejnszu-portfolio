@@ -9,7 +9,8 @@ const SmallTextElement = (props) => {
     >
       <motion.p
         initial={{ opacity: 0, x: "-100%" }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{ delay: 1, duration: 0.5 }}
         className={styles.text}
       >
@@ -17,7 +18,8 @@ const SmallTextElement = (props) => {
         <motion.span
           layout
           initial={{ opacity: 0, right: "-100px" }}
-          animate={{ opacity: 1, right: 0 }}
+          whileInView={{ opacity: 1, right: 0 }}
+          viewport={{ once: true }}
           transition={{ delay: 1.5, duration: 0.5 }}
         />
       </motion.p>

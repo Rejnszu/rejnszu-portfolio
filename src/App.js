@@ -8,9 +8,13 @@ import PracticalSkills from "./pages/PracticalSkills";
 import CodeSkills from "./pages/CodeSkills/CodeSkills";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 function App() {
   const location = useLocation();
   const [displayNavigation, setDisplayNavigation] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <div className="page-wrapper">
       <AnimatePresence exitBeforeEnter>

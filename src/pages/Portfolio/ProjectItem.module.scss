@@ -1,0 +1,28 @@
+.project {
+  flex: 0 0 calc(33% - 20px);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+
+  box-shadow: inset 0 0 50px var(--helper-color-2--darker);
+}
+.project__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(0.7rem, 5vw, 1.5rem);
+
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  position: relative;
+  max-width: 90%;
+  z-index: 1;
+}
+.project__image {
+  max-width: 95%;
+
+  border-radius: var(--border-radius);
+}

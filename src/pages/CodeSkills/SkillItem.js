@@ -24,11 +24,17 @@ const SkillItem = (props) => {
   // }, []);
 
   return (
-    <div ref={itemRef} className={styles["skills__list__item"]}>
+    <motion.div
+      initial={{ opacity: 0, x: "200px" }}
+      animate={{ opacity: 1, x: 0 }}
+      ref={itemRef}
+      className={styles["skills__list__item"]}
+    >
       <motion.p
         ref={nameRef}
         initial={{ y: "-30px", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.6,
           duration: 0.3,
@@ -46,14 +52,15 @@ const SkillItem = (props) => {
           ref={fillingRef}
           key={index}
           initial={{ width: 0 }}
-          animate={{ width: fillingWidth }}
+          whileInView={{ width: fillingWidth }}
+          viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.3, ease: "linear" }}
           className={styles["level__filling"]}
         >
           {percent}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

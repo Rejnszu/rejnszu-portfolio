@@ -30,7 +30,7 @@
   max-width: 95%;
   margin: auto;
   border: 2px solid var(--helper-color-2);
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   transition: all 0.3s;
   &:hover {
     border-color: var(--helper-color-2--brighter);

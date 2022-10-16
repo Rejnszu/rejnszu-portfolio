@@ -10,7 +10,7 @@ const AnimatedPages = (props) => {
       exit={{ x: "100%", opacity: 0 }}
       transition={{
         ease: "linear",
-        duration: 0.6,
+        duration: 0.5,
         opacity: {
           duration: 0.3,
         },
