@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rejnszu-portfolio/static/css/main.98725bd4.css",
-    "main.js": "/rejnszu-portfolio/static/js/main.baa48b7b.js",
+    "main.css": "/rejnszu-portfolio/static/css/main.3935580e.css",
+    "main.js": "/rejnszu-portfolio/static/js/main.c3d1d866.js",
     "static/media/newtool-min.png": "/rejnszu-portfolio/static/media/newtool-min.1df47d8ecb0e47f541fd.png",
     "static/media/musify-min.png": "/rejnszu-portfolio/static/media/musify-min.dcb4b6c0f2d5a659660f.png",
     "static/media/rebro-min.png": "/rejnszu-portfolio/static/media/rebro-min.5146de9e17c0e9f8ab45.png",
@@ -17,11 +17,11 @@
     "static/media/currency-min.jpg": "/rejnszu-portfolio/static/media/currency-min.38cfd467b2dd18280c1e.jpg",
     "static/media/calculator-min.jpg": "/rejnszu-portfolio/static/media/calculator-min.e0676a63c1a98bc227e9.jpg",
     "index.html": "/rejnszu-portfolio/index.html",
-    "main.98725bd4.css.map": "/rejnszu-portfolio/static/css/main.98725bd4.css.map",
-    "main.baa48b7b.js.map": "/rejnszu-portfolio/static/js/main.baa48b7b.js.map"
+    "main.3935580e.css.map": "/rejnszu-portfolio/static/css/main.3935580e.css.map",
+    "main.c3d1d866.js.map": "/rejnszu-portfolio/static/js/main.c3d1d866.js.map"
   },
   "entrypoints": [
-    "static/css/main.98725bd4.css",
-    "static/js/main.baa48b7b.js"
+    "static/css/main.3935580e.css",
+    "static/js/main.c3d1d866.js"
   ]
 }
