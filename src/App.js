@@ -31,8 +31,10 @@ function App() {
       )}
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
-          <Route path="/rejnszu-portfolio" element={<AboutMe />} />
-          <Route path="/omnie" element={<AboutMe />} />
+          {["/rejnszu-portfolio", "/omnie", "/"].map((path) => (
+            <Route path={path} element={<AboutMe />} />
+          ))}
+
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/umiejetnoscipraktyczne" element={<PracticalSkills />} />
           <Route path="/umiejetnoscikodowania" element={<CodeSkills />} />

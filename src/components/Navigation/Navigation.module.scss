@@ -55,7 +55,7 @@
   transition: all 0.3s;
   margin: 0.5rem 0;
   border: 1px solid black;
-
+  z-index: var(--i);
   opacity: 1;
 }
 .navigation__list li.inactive {
