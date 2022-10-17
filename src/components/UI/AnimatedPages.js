@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const AnimatedPages = (props) => {
   return (
     <motion.div
-      layout
       key={props.page}
       initial={{ x: "-100%", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}

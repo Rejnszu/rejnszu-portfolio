@@ -1,14 +1,31 @@
 .portfolio {
-  background-color: var(--main-color);
+  background-color: var(--backgroundColor);
   color: white;
-  min-height: 100vh;
+  height: auto;
 }
 .projects__wrapper {
   display: grid;
-  max-width: 90%;
+  max-width: 80%;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 100px;
   margin: auto;
+}
+.portfolio__select {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  & p {
+    padding: 1rem;
+    font-size: clamp(0.8rem, 4vw, 1.3rem);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: var(--helper-color-2--brighter);
+    }
+    &:focus {
+      color: var(--helper-color-2--brighter);
+    }
+  }
 }
 @media only screen and (max-width: 1300px) {
   .projects__wrapper {

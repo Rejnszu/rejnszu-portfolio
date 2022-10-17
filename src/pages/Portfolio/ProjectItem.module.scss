@@ -1,28 +1,56 @@
 .project {
-  flex: 0 0 calc(33% - 20px);
-  padding: 1rem 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-
-  align-items: center;
+  position: relative;
   background-color: var(--main-color);
-  border-radius: var(--border-radius);
-
-  box-shadow: inset 0 0 50px var(--helper-color-2--darker);
+  border-radius: 15px;
+  background: rgb(0, 0, 0);
+  transition: transform 0.3s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(66, 0, 66, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
+    5px 5px 20px black;
+  &:hover {
+    transform: translateY(-20px);
+  }
+}
+.project__link {
+  position: absolute;
+  top: 2px;
+  margin: 5px;
+  padding: 0.6rem 0.6rem 0 0.6rem;
+  border-radius: 50%;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0 0 10px var(--helper-color-2--darker);
+  color: var(--helper-color-2--brighter);
+  font-size: 2rem;
+  background-color: var(--backgroundColor);
 }
 .project__title {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: clamp(0.7rem, 5vw, 1.5rem);
+  margin: 1rem 0;
+  font-size: clamp(0.7rem, 5vw, 1.2rem);
 
+  text-transform: uppercase;
   padding: 0.5rem;
   border-radius: var(--border-radius);
-  position: relative;
-  max-width: 90%;
+
+  text-shadow: 0 0 5px var(--helper-color-2--brighter);
   z-index: 1;
 }
 .project__image {
-  max-width: 95%;
+  margin: 0.6rem;
+  max-width: 100%;
 
-  border-radius: var(--border-radius);
+  box-shadow: 0px 20px 40px black;
+  border-radius: 15px;
 }

@@ -31,7 +31,7 @@ function App() {
       )}
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
-          <Route path="/" element={<AboutMe />} />
+          <Route path="/rejnszu-portfolio" element={<AboutMe />} />
           <Route path="/omnie" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/umiejetnoscipraktyczne" element={<PracticalSkills />} />

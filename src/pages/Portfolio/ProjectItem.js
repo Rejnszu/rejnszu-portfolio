@@ -1,21 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ProjectItem.module.scss";
-import img from "../../assets/musify-min.png";
+import { TfiWorld } from "react-icons/tfi";
 import Button from "../../components/UI/Button";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import MoreInfoModal from "../../components/UI/MoreInfoModal";
+
 const ProjectItem = (props) => {
-  const { alt, src, title } = { ...props };
+  const [showMoreInfo, setShowMoreInfo] = useState(false);
+  const { alt, img, title, href } = { ...props };
+
   return (
-    <motion.div
-      initial={{ opacity: 0, x: "200px" }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
-      className={styles.project}
-    >
-      <p className={styles["project__title"]}>{title}Przykladowy tytuł</p>
-      <img className={styles["project__image"]} src={img} alt={alt}></img>
-      <Button>Więcej Informacji</Button>
-    </motion.div>
+    <React.Fragment>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className={styles.project}
+      >
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className={styles["project__link"]}
+          href={href}
+        >
+          <TfiWorld />
+        </a>
+        <img className={styles["project__image"]} src={img} alt={alt}></img>
+        <p className={styles["project__title"]}>{title}</p>
+
+        <Button onClick={() => setShowMoreInfo((prevState) => !prevState)}>
+          {showMoreInfo ? "Mniej informacji" : "Więcej informacji"}
+        </Button>
+        <AnimatePresence>
+          {showMoreInfo && <MoreInfoModal alt={alt} />}
+        </AnimatePresence>
+      </motion.div>
+    </React.Fragment>
   );
 };
 

@@ -7,9 +7,10 @@
 
 :root {
   --main-color: black;
+  --backgroundColor: rgba(0, 0, 0, 0.7);
   --helper-color-1: white;
   --helper-color-2: rgb(95, 19, 95);
-  --helper-color-2--darker: rgb(66, 0, 66);
+  --helper-color-2--darker: #420042;
   --helper-color-2--brighter: rgb(161, 0, 161);
   --border-radius: 3px;
 }
@@ -19,22 +20,7 @@ body {
   position: relative;
   overflow-x: hidden;
   font-family: "Oxygen Mono", monospace;
-  background-color: var(--main-color);
-  // &::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   content: "";
-  //   width: 100%;
-  //   height: 100vh;
-  //   filter: grayscale(1);
-  //   background-attachment: fixed;
-  //   background-color: var(--main-color);
-  //   background-image: url("./assets/code.jpg");
-
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  // }
+  background-color: var(--backgroundColor);
 }
 .page-wrapper {
   position: relative;
@@ -53,13 +39,4 @@ p {
 .section-padding {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-@media only screen and (max-width: 1200px) {
-  body {
-    &::before {
-      background-size: cover;
-      background-position: center;
-    }
-  }
 }

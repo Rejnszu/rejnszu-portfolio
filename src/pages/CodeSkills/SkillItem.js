@@ -1,37 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./SkillItem.module.scss";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 const SkillItem = (props) => {
   const { name, percent, index } = props;
   const fillingWidth = `${percent}`;
-  const itemRef = useRef(null);
-  const nameRef = useRef(null);
-  const fillingRef = useRef(null);
-
-  // useEffect(() => {
-  //   itemRef.current.addEventListener("mouseenter", function () {
-  //     if (this.classList.contains(styles.animate)) {
-  //       return;
-  //     } else {
-  //       itemRef.current.classList.add(styles.animate);
-  //       nameRef.current.classList.add(styles.animate);
-  //       fillingRef.current.classList.add(styles.animate);
-  //     }
-  //     setTimeout(() => this.classList.remove(styles.animate), 2000);
-  //   });
-  // }, []);
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: "200px" }}
-      animate={{ opacity: 1, x: 0 }}
-      ref={itemRef}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       className={styles["skills__list__item"]}
     >
       <motion.p
-        ref={nameRef}
         initial={{ y: "-30px", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -49,7 +30,6 @@ const SkillItem = (props) => {
       </motion.p>
       <div className={styles["skills__list__item__level"]}>
         <motion.div
-          ref={fillingRef}
           key={index}
           initial={{ width: 0 }}
           whileInView={{ width: fillingWidth }}
