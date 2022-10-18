@@ -4,9 +4,9 @@ import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import styles from "./Portfolio.module.scss";
-import ProjectItem from "./ProjectItem";
-import { webSiteProjects } from "./ProjectsList";
-import { AppProjects } from "./ProjectsList";
+import ProjectItem from "../../components/Portfolio/ProjectItem";
+import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
+import { AppProjects } from "../../components/Portfolio/ProjectsList";
 
 const Portfolio = () => {
   const [displayedProjects, setDisplayedProjects] = useState("websites");
@@ -14,7 +14,7 @@ const Portfolio = () => {
     <AnimatedPages page="portfolio">
       <section className={`${styles["portfolio"]} section-padding`}>
         <Heading text="Portfolio" />
-        <SmallTextElement flexPosition="center">
+        <SmallTextElement delay={0.2} flexPosition="center">
           Poniżej przedstawiam pare moich ukończonych projektów.
         </SmallTextElement>
         <div className={styles["portfolio__select"]}>
@@ -36,6 +36,7 @@ const Portfolio = () => {
             {webSiteProjects.map((project) => {
               return (
                 <ProjectItem
+                  code={project.code}
                   href={project.href}
                   key={project.alt}
                   img={project.img}
@@ -51,6 +52,7 @@ const Portfolio = () => {
             {AppProjects.map((project) => {
               return (
                 <ProjectItem
+                  code={project.code}
                   href={project.href}
                   key={project.alt}
                   img={project.img}

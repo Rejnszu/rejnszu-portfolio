@@ -2,13 +2,14 @@ import { useState } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import Burger from "./components/Navigation/Burger";
 import { Routes, Route, useLocation } from "react-router-dom";
-import AboutMe from "./pages/AboutMe/AboutMe";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import PracticalSkills from "./pages/PracticalSkills";
-import CodeSkills from "./pages/CodeSkills/CodeSkills";
-import Contact from "./pages/Contact";
+import AboutMePage from "./pages/AboutMe/AboutMePage";
+import PortfolioPage from "./pages/Portfolio/PortfolioPage";
+import PracticalSkillsPage from "./pages/PracticalSkillsPage";
+import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
+import ContactPage from "./pages/ContactPage";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import NotFound from "./components/UI/NotFound";
 function App() {
   const location = useLocation();
   const [displayNavigation, setDisplayNavigation] = useState(false);
@@ -32,14 +33,21 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           {["/rejnszu-portfolio", "/omnie", "/"].map((path) => (
-            <Route path={path} element={<AboutMe />} />
+            <Route
+              key={Math.random() * 100 + "key"}
+              path={path}
+              element={<AboutMePage />}
+            />
           ))}
 
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/umiejetnoscipraktyczne" element={<PracticalSkills />} />
-          <Route path="/umiejetnoscikodowania" element={<CodeSkills />} />
-          <Route path="/kontakt" element={<Contact />} />
-          <Route path="*" element={<div>Not Found</div>} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route
+            path="/umiejetnoscipraktyczne"
+            element={<PracticalSkillsPage />}
+          />
+          <Route path="/umiejetnoscikodowania" element={<CodeSkillsPage />} />
+          <Route path="/kontakt" element={<ContactPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
     </div>

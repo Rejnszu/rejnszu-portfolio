@@ -18,22 +18,34 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
     5px 5px 20px black;
-  &:hover {
-    transform: translateY(-20px);
-  }
+}
+.project__code {
+  position: absolute;
+  top: 0;
+  margin: 6px;
+  padding: 0.6rem 0.6rem 0 0.6rem;
+  border-radius: 50%;
+  left: 0;
+  z-index: 10;
+
+  border: 2px solid var(--helper-color-2--darker);
+  color: var(--helper-color-2--brighter);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .project__link {
   position: absolute;
-  top: 2px;
-  margin: 5px;
+  top: 0;
+  margin: 6px;
   padding: 0.6rem 0.6rem 0 0.6rem;
   border-radius: 50%;
   right: 0;
   z-index: 10;
-  box-shadow: 0 0 10px var(--helper-color-2--darker);
+
+  border: 2px solid var(--helper-color-2--darker);
   color: var(--helper-color-2--brighter);
   font-size: 2rem;
-  background-color: var(--backgroundColor);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .project__title {
   text-align: center;

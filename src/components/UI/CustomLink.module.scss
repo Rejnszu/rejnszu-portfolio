@@ -1,0 +1,18 @@
+.custom-link {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid var(--helper-color-2--brighter);
+}
+.custom-link__cursor {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+
+  right: 0;
+  background-color: initial !important;
+  box-shadow: none !important;
+  font-size: 2rem;
+}

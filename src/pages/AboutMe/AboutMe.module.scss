@@ -3,3 +3,52 @@
   background-color: var(--backgroundColor);
   color: white;
 }
+.about-me__informations {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.informations__my-photo__wrapper {
+  flex: 0 0 35%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.informations__my-photo {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 20px var(--helper-color-2--darker);
+  filter: grayscale(0.5);
+}
+.informations__description {
+  padding: 1rem 2rem;
+  flex: 0 0 60%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    left: 0;
+    top: 0;
+    background-color: var(--helper-color-2--darker);
+    box-shadow: 3px 3px 5px var(--backgroundColor);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .about-me__informations {
+    flex-direction: column;
+  }
+  .informations__description {
+    margin-top: 2rem;
+    &::after {
+      height: 3px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.description {
+  margin-bottom: 2rem;
+}
+.description__title {
+  margin-bottom: 1rem;
+  color: var(--helper-color-2--brighter);
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
+}

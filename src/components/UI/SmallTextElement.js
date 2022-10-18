@@ -11,7 +11,7 @@ const SmallTextElement = (props) => {
         initial={{ opacity: 0, x: "-100%" }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 0.5 }}
+        transition={{ delay: props.delay, duration: 0.5 }}
         className={styles.text}
       >
         {props.children}
@@ -20,7 +20,7 @@ const SmallTextElement = (props) => {
           initial={{ opacity: 0, right: "-100px" }}
           whileInView={{ opacity: 1, right: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{ delay: props.delay + 0.5, duration: 0.5 }}
         />
       </motion.p>
     </div>

@@ -101,7 +101,6 @@
   border: 1px solid var(--helper-color-2);
 }
 .navigation__list a:last-child li::after {
-  // box-shadow: -120px 120px 20px rgba(255, 255, 255, 0.226);
   animation: growingBoxShadow 8s infinite linear;
 }
 @keyframes growingBoxShadow {
@@ -114,19 +113,4 @@
   100% {
     box-shadow: -120px 120px 20px rgba(255, 255, 255, 0.226);
   }
-}
-.index-1 {
-  z-index: 1;
-}
-.index-2 {
-  z-index: 2;
-}
-.index-3 {
-  z-index: 3;
-}
-.index-4 {
-  z-index: 4;
-}
-.index-5 {
-  z-index: 5;
 }

@@ -15,7 +15,7 @@
   justify-content: center;
   margin: 2rem 0;
   & p {
-    padding: 1rem;
+    padding: 2rem;
     font-size: clamp(0.8rem, 4vw, 1.3rem);
     cursor: pointer;
     transition: all 0.3s;
@@ -24,6 +24,8 @@
     }
     &:focus {
       color: var(--helper-color-2--brighter);
+      outline: none;
+      border: none;
     }
   }
 }

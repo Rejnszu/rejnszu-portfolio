@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import styles from "./ProjectItem.module.scss";
 import { TfiWorld } from "react-icons/tfi";
+import { BiCodeAlt } from "react-icons/bi";
 import Button from "../../components/UI/Button";
 import { AnimatePresence, motion } from "framer-motion";
 import MoreInfoModal from "../../components/UI/MoreInfoModal";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
-  const { alt, img, title, href } = { ...props };
+  const { alt, img, title, href, code } = { ...props };
 
   return (
     <React.Fragment>
@@ -25,6 +26,14 @@ const ProjectItem = (props) => {
           href={href}
         >
           <TfiWorld />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className={styles["project__code"]}
+          href={code}
+        >
+          <BiCodeAlt />
         </a>
         <img className={styles["project__image"]} src={img} alt={alt}></img>
         <p className={styles["project__title"]}>{title}</p>
