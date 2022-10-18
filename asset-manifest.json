@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rejnszu-portfolio/static/css/main.3935580e.css",
-    "main.js": "/rejnszu-portfolio/static/js/main.c3d1d866.js",
+    "main.css": "/rejnszu-portfolio/static/css/main.bce73b98.css",
+    "main.js": "/rejnszu-portfolio/static/js/main.bd01f679.js",
     "static/media/newtool-min.png": "/rejnszu-portfolio/static/media/newtool-min.1df47d8ecb0e47f541fd.png",
     "static/media/musify-min.png": "/rejnszu-portfolio/static/media/musify-min.dcb4b6c0f2d5a659660f.png",
     "static/media/rebro-min.png": "/rejnszu-portfolio/static/media/rebro-min.5146de9e17c0e9f8ab45.png",
@@ -9,19 +9,21 @@
     "static/media/domsi-min.png": "/rejnszu-portfolio/static/media/domsi-min.b74c9eba38743d036cac.png",
     "static/media/reha-min.png": "/rejnszu-portfolio/static/media/reha-min.b5b8b02292b7b7ed88ba.png",
     "static/media/tictactoe-min.jpg": "/rejnszu-portfolio/static/media/tictactoe-min.c011edc5832d0a01e145.jpg",
+    "static/media/portfolio-min.png": "/rejnszu-portfolio/static/media/portfolio-min.077b9cad001bb5400ff6.png",
     "static/media/sprawdzauto-min.png": "/rejnszu-portfolio/static/media/sprawdzauto-min.0f40f95285956af40e29.png",
     "static/media/fithits-min.jpg": "/rejnszu-portfolio/static/media/fithits-min.de77835fc4988790f814.jpg",
+    "static/media/quiz-min.png": "/rejnszu-portfolio/static/media/quiz-min.37a95b9246b26c29b62e.png",
     "static/media/tanks-min.jpg": "/rejnszu-portfolio/static/media/tanks-min.aa0b99784680260e4274.jpg",
     "static/media/formularz szkolny.png": "/rejnszu-portfolio/static/media/formularz szkolny.c195d0b359665683725d.png",
     "static/media/crypto-min.jpg": "/rejnszu-portfolio/static/media/crypto-min.48ea55ec3a5c3020e61f.jpg",
     "static/media/currency-min.jpg": "/rejnszu-portfolio/static/media/currency-min.38cfd467b2dd18280c1e.jpg",
     "static/media/calculator-min.jpg": "/rejnszu-portfolio/static/media/calculator-min.e0676a63c1a98bc227e9.jpg",
     "index.html": "/rejnszu-portfolio/index.html",
-    "main.3935580e.css.map": "/rejnszu-portfolio/static/css/main.3935580e.css.map",
-    "main.c3d1d866.js.map": "/rejnszu-portfolio/static/js/main.c3d1d866.js.map"
+    "main.bce73b98.css.map": "/rejnszu-portfolio/static/css/main.bce73b98.css.map",
+    "main.bd01f679.js.map": "/rejnszu-portfolio/static/js/main.bd01f679.js.map"
   },
   "entrypoints": [
-    "static/css/main.3935580e.css",
-    "static/js/main.c3d1d866.js"
+    "static/css/main.bce73b98.css",
+    "static/js/main.bd01f679.js"
   ]
 }
