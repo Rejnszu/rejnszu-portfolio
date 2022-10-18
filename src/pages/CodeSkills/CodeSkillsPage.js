@@ -4,19 +4,7 @@ import styles from "./CodeSkills.module.scss";
 import SkillItem from "../../components/CodeSkills/SkillItem";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
-const skills = [
-  { name: "HTML", percent: "80%" },
-  { name: "CSS", percent: "80%" },
-  { name: "Sass", percent: "50%" },
-  { name: "BOOTSTRAP", percent: "70%" },
-  { name: "JAVASCRIPT", percent: "70%" },
-  { name: "REACT", percent: "65%" },
-  { name: "REDUX", percent: "80%" },
-  { name: "WORDPRESS", percent: "40%" },
-  { name: "PHP", percent: "30%" },
-  { name: "GIT", percent: "60%" },
-];
-
+import { skills } from "../../components/CodeSkills/SkillsList";
 const CodeSkills = () => {
   return (
     <AnimatedPages page="codeskills">
@@ -37,6 +25,7 @@ const CodeSkills = () => {
                   key={index}
                   name={skill.name}
                   percent={skill.percent}
+                  icon={skill.icon}
                 />
               );
             })}

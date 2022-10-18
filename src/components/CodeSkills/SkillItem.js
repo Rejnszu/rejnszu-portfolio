@@ -3,7 +3,7 @@ import styles from "./SkillItem.module.scss";
 import { motion } from "framer-motion";
 
 const SkillItem = (props) => {
-  const { name, percent, index } = props;
+  const { name, percent, index, icon } = props;
   const fillingWidth = `${percent}`;
 
   return (
@@ -12,22 +12,40 @@ const SkillItem = (props) => {
       animate={{ opacity: 1 }}
       className={styles["skills__list__item"]}
     >
-      <motion.p
-        initial={{ y: "-30px", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          delay: 0.6,
-          duration: 0.3,
-          y: {
+      <div className={styles["skills__list__item__inner-wrapper"]}>
+        <motion.p
+          initial={{ y: "-30px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.6,
             duration: 0.5,
-            ease: "linear",
-          },
-        }}
-        className={styles["skills__list__item__name"]}
-      >
-        {name}
-      </motion.p>
+            y: {
+              duration: 0.5,
+              ease: "linear",
+            },
+          }}
+          className={styles["skills__list__item__name"]}
+        >
+          {name}
+        </motion.p>
+        <motion.p
+          initial={{ y: "-30px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.9,
+            duration: 0.4,
+            y: {
+              duration: 0.5,
+              ease: "linear",
+            },
+          }}
+          className={styles["skills__list__item__icon"]}
+        >
+          {icon}
+        </motion.p>
+      </div>
       <div className={styles["skills__list__item__level"]}>
         <motion.div
           key={index}

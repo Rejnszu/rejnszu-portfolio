@@ -3,12 +3,24 @@
 
   transition: all 0.5s;
 }
+.skills__list__item__inner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 .skills__list__item__name {
   text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  transform: all 0.5s;
+}
+.skills__list__item__icon {
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .skills__list__item__level {
   position: relative;
@@ -31,7 +43,7 @@
   overflow: hidden;
   display: flex;
   font-weight: 700;
-  transition: all 0.3s;
+
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
