@@ -24,7 +24,7 @@ const Portfolio = () => {
               setDisplayedProjects("websites");
             }}
           >
-            Strony internetowe
+            Strony
           </p>
           <p tabIndex={0} onClick={() => setDisplayedProjects("apps")}>
             Aplikacje

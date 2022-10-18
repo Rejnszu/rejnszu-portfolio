@@ -16,7 +16,7 @@
   margin: 2rem 0;
   & p {
     padding: 2rem;
-    font-size: clamp(0.8rem, 4vw, 1.3rem);
+    font-size: clamp(1rem, 4vw, 1.3rem);
     cursor: pointer;
     transition: all 0.3s;
     &:hover {

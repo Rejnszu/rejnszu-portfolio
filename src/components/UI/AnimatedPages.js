@@ -7,6 +7,9 @@ const AnimatedPages = (props) => {
   const navigate = useNavigate();
   const nextPage = () => {
     switch (location.pathname) {
+      case "/rejnszu-portfolio/":
+        navigate("/umiejetnoscikodowania");
+        break;
       case "/omnie":
         navigate("/umiejetnoscikodowania");
         break;
@@ -20,6 +23,9 @@ const AnimatedPages = (props) => {
         navigate("/kontakt");
         break;
       case "/kontakt":
+        navigate("/omnie");
+        break;
+      default:
         navigate("/omnie");
         break;
     }
@@ -38,13 +44,17 @@ const AnimatedPages = (props) => {
         },
       }}
     >
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
         key={props.page + "next"}
         onClick={() => nextPage()}
         className="next-page"
       >
         <AiOutlineArrowRight />
-      </div>
+      </motion.div>
       {props.children}
     </motion.div>
   );
