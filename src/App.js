@@ -39,13 +39,12 @@ function App() {
               element={<AboutMePage />}
             />
           ))}
-
-          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/umiejetnoscikodowania" element={<CodeSkillsPage />} />
           <Route
             path="/umiejetnoscipraktyczne"
             element={<PracticalSkillsPage />}
-          />
-          <Route path="/umiejetnoscikodowania" element={<CodeSkillsPage />} />
+          />{" "}
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

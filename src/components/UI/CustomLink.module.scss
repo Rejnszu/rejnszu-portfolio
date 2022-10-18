@@ -4,7 +4,11 @@
   isolation: isolate;
   text-decoration: none;
   color: white;
+  transition: transform 0.2s;
   border-bottom: 2px solid var(--helper-color-2--brighter);
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 .custom-link__cursor {
   position: absolute;

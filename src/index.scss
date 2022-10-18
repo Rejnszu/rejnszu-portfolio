@@ -40,3 +40,28 @@ p {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.next-page {
+  position: fixed;
+  height: 100%;
+  background-color: var(--helper-color-2--darker);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  padding: 0 10px;
+  width: auto;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .next-page {
+    display: none;
+  }
+}

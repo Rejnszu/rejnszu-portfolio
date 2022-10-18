@@ -1,7 +1,7 @@
 .burger {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 10px;
   font-size: 3rem;
   height: 1.5rem;
   width: 2rem;
@@ -11,8 +11,7 @@
   cursor: pointer;
   z-index: 200;
   &:hover span {
-    transform: scale(1.1);
-    background-color: var(--helper-color-2);
+    transform: scale(1.2);
   }
 }
 .burger span {

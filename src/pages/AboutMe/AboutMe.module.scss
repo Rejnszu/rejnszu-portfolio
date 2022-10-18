@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: auto;
   margin-top: 5rem;
   flex-wrap: wrap;
@@ -17,9 +17,13 @@
   flex: 0 0 35%;
   margin-top: auto;
   margin-bottom: auto;
+  & figcaption {
+    font-size: clamp(0.6rem, 3vw, 1rem);
+  }
 }
 .informations__my-photo {
   max-width: 100%;
+  margin-bottom: 1rem;
   border-radius: var(--border-radius);
   box-shadow: 5px 5px 20px var(--helper-color-2--darker);
   filter: grayscale(0.5);
@@ -43,6 +47,15 @@
 @media only screen and (max-width: 1200px) {
   .about-me__informations {
     flex-direction: column;
+    margin-top: 3rem;
+  }
+  .informations__my-photo__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & img {
+      max-width: 80%;
+    }
   }
   .informations__description {
     margin-top: 2rem;

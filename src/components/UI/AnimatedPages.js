@@ -1,6 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
 const AnimatedPages = (props) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const nextPage = () => {
+    switch (location.pathname) {
+      case "/omnie":
+        navigate("/umiejetnoscikodowania");
+        break;
+      case "/umiejetnoscikodowania":
+        navigate("/umiejetnoscipraktyczne");
+        break;
+      case "/umiejetnoscipraktyczne":
+        navigate("/portfolio");
+        break;
+      case "/portfolio":
+        navigate("/kontakt");
+        break;
+      case "/kontakt":
+        navigate("/omnie");
+        break;
+    }
+  };
   return (
     <motion.div
       key={props.page}
@@ -15,6 +38,13 @@ const AnimatedPages = (props) => {
         },
       }}
     >
+      <div
+        key={props.page + "next"}
+        onClick={() => nextPage()}
+        className="next-page"
+      >
+        <AiOutlineArrowRight />
+      </div>
       {props.children}
     </motion.div>
   );

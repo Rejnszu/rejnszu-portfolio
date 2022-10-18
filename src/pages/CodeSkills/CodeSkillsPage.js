@@ -43,7 +43,7 @@ const CodeSkills = () => {
           </ul>
         </div>
         <SmallTextElement delay={0.5} flexPosition="center">
-          Ocena jest oczywiście subiektywna ; )
+          Ocena jest oczywiście subiektywna
         </SmallTextElement>
       </section>
     </AnimatedPages>
