@@ -4,9 +4,9 @@ import Burger from "./components/Navigation/Burger";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AboutMePage from "./pages/AboutMe/AboutMePage";
 import PortfolioPage from "./pages/Portfolio/PortfolioPage";
-import PracticalSkillsPage from "./pages/PracticalSkillsPage";
+import PracticalSkillsPage from "./pages/PracticalSkills/PracticalSkillsPage";
 import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
-import ContactPage from "./pages/ContactPage";
+import ContactPage from "./pages/Contact/ContactPage";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import NotFound from "./components/UI/NotFound";
@@ -43,7 +43,7 @@ function App() {
           <Route
             path="/umiejetnoscipraktyczne"
             element={<PracticalSkillsPage />}
-          />{" "}
+          />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />

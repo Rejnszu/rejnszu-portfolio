@@ -23,7 +23,7 @@ const CodeSkills = () => {
       <section className={`${styles["code-skills"]} section-padding`}>
         <Heading
           name="aboutme-heading"
-          text="Technologie z których korzystam na codzień"
+          text="Technologie z których korzystam na co dzień"
         />
         <SmallTextElement delay={0.2} flexPosition="center">
           Wraz z przybliżonym poziomem zaawansowania

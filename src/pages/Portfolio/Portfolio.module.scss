@@ -1,7 +1,7 @@
 .portfolio {
   background-color: var(--backgroundColor);
   color: white;
-  height: auto;
+  min-height: 100vh;
 }
 .projects__wrapper {
   display: grid;
