@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/rejnszu-portfolio/static/css/main.6c7e8ad0.css",
-    "main.js": "/rejnszu-portfolio/static/js/main.7054b39d.js",
-    "static/media/newtool-min.png": "/rejnszu-portfolio/static/media/newtool-min.1df47d8ecb0e47f541fd.png",
-    "static/media/musify-min.png": "/rejnszu-portfolio/static/media/musify-min.dcb4b6c0f2d5a659660f.png",
-    "static/media/rebro-min.png": "/rejnszu-portfolio/static/media/rebro-min.5146de9e17c0e9f8ab45.png",
-    "static/media/biker-min.png": "/rejnszu-portfolio/static/media/biker-min.a7b5c43c9fd00c80fa9d.png",
-    "static/media/domsi-min.png": "/rejnszu-portfolio/static/media/domsi-min.b74c9eba38743d036cac.png",
-    "static/media/reha-min.png": "/rejnszu-portfolio/static/media/reha-min.b5b8b02292b7b7ed88ba.png",
-    "static/media/tictactoe-min.jpg": "/rejnszu-portfolio/static/media/tictactoe-min.c011edc5832d0a01e145.jpg",
-    "static/media/portfolio-min.png": "/rejnszu-portfolio/static/media/portfolio-min.077b9cad001bb5400ff6.png",
-    "static/media/sprawdzauto-min.png": "/rejnszu-portfolio/static/media/sprawdzauto-min.0f40f95285956af40e29.png",
-    "static/media/fithits-min.jpg": "/rejnszu-portfolio/static/media/fithits-min.de77835fc4988790f814.jpg",
-    "static/media/quiz-min.png": "/rejnszu-portfolio/static/media/quiz-min.37a95b9246b26c29b62e.png",
+    "main.css": "/rejnszu-portfolio/static/css/main.c46a125a.css",
+    "main.js": "/rejnszu-portfolio/static/js/main.60ad18a8.js",
+    "static/media/newtool.webp": "/rejnszu-portfolio/static/media/newtool.b60583c3b6bbd48852e8.webp",
+    "static/media/tictactoe.jpg": "/rejnszu-portfolio/static/media/tictactoe.c011edc5832d0a01e145.jpg",
+    "static/media/sprawdzauto.webp": "/rejnszu-portfolio/static/media/sprawdzauto.71d77280c8d3f0d7874f.webp",
+    "static/media/domsi.webp": "/rejnszu-portfolio/static/media/domsi.c8e8d3afbe8dd569c5b0.webp",
+    "static/media/biker.webp": "/rejnszu-portfolio/static/media/biker.7e264d2e8715622f7c41.webp",
+    "static/media/rebro.webp": "/rejnszu-portfolio/static/media/rebro.6827962acb1d85f8a31d.webp",
+    "static/media/rehasquad.webp": "/rejnszu-portfolio/static/media/rehasquad.ee4ce288b54ba9ee4014.webp",
+    "static/media/musify.webp": "/rejnszu-portfolio/static/media/musify.c3df7a212c1c4d778a06.webp",
     "static/media/hobbiton-min.webp": "/rejnszu-portfolio/static/media/hobbiton-min.1299c52ce2de1c6afea3.webp",
-    "static/media/tanks-min.jpg": "/rejnszu-portfolio/static/media/tanks-min.aa0b99784680260e4274.jpg",
-    "static/media/formularz szkolny.png": "/rejnszu-portfolio/static/media/formularz szkolny.c195d0b359665683725d.png",
-    "static/media/crypto-min.jpg": "/rejnszu-portfolio/static/media/crypto-min.48ea55ec3a5c3020e61f.jpg",
-    "static/media/currency-min.jpg": "/rejnszu-portfolio/static/media/currency-min.38cfd467b2dd18280c1e.jpg",
-    "static/media/calculator-min.jpg": "/rejnszu-portfolio/static/media/calculator-min.e0676a63c1a98bc227e9.jpg",
+    "static/media/tanks.webp": "/rejnszu-portfolio/static/media/tanks.1a508faa425ef80e7f62.webp",
+    "static/media/portfolio.webp": "/rejnszu-portfolio/static/media/portfolio.3c77f85e8731265f58c5.webp",
+    "static/media/quiz.webp": "/rejnszu-portfolio/static/media/quiz.5e706ee22f3824cea577.webp",
+    "static/media/crypto.webp": "/rejnszu-portfolio/static/media/crypto.2d739eaed200ccbbcbc2.webp",
+    "static/media/fithits.webp": "/rejnszu-portfolio/static/media/fithits.634a7712a987b17c3725.webp",
+    "static/media/currency.webp": "/rejnszu-portfolio/static/media/currency.e203cb432620a49c41ae.webp",
+    "static/media/formularz.webp": "/rejnszu-portfolio/static/media/formularz.f07a568bcf76a81deea9.webp",
+    "static/media/calculator.webp": "/rejnszu-portfolio/static/media/calculator.fc9b02d0eba39f9e6ba4.webp",
     "index.html": "/rejnszu-portfolio/index.html",
-    "main.6c7e8ad0.css.map": "/rejnszu-portfolio/static/css/main.6c7e8ad0.css.map",
-    "main.7054b39d.js.map": "/rejnszu-portfolio/static/js/main.7054b39d.js.map"
+    "main.c46a125a.css.map": "/rejnszu-portfolio/static/css/main.c46a125a.css.map",
+    "main.60ad18a8.js.map": "/rejnszu-portfolio/static/js/main.60ad18a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c7e8ad0.css",
-    "static/js/main.7054b39d.js"
+    "static/css/main.c46a125a.css",
+    "static/js/main.60ad18a8.js"
   ]
 }
