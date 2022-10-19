@@ -10,6 +10,7 @@ const SkillItem = (props) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
       className={styles["skills__list__item"]}
     >
       <div className={styles["skills__list__item__inner-wrapper"]}>

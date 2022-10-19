@@ -37,5 +37,6 @@
 @media only screen and (max-width: 800px) {
   .projects__wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 50px;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import styles from "./AboutMe.module.scss";
-import myImage from "../../assets/hobbiton-min.jpg";
+import myImage from "../../assets/hobbiton-min.webp";
 import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 
 import SmallTextElement from "../../components/UI/SmallTextElement";

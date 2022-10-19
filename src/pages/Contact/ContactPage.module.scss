@@ -11,9 +11,14 @@
   justify-content: space-around;
 }
 .contact__direct-message__item {
-  margin: 1rem 0;
+  margin: 2rem 0;
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
 }
-
+.social-media__icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
 @media only screen and (max-width: 900px) {
   .contact__inner-wrapper {
     margin-top: 2rem !important;

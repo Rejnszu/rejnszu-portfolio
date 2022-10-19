@@ -6,9 +6,9 @@ const MoreInfoModal = (props) => {
     <React.Fragment>
       <motion.div
         key={props.alt}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        initial={{ scale: 1.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 1.5, opacity: 0 }}
         className={styles.modal}
       >
         {props.children}Lorem Ipsum is simply dummy text of the printing and
