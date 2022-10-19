@@ -3,3 +3,17 @@
   color: white;
   min-height: 100vh;
 }
+.practical-skills__counter-wrapper {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+
+  justify-content: space-around;
+}
+@media only screen and (max-width: 1300px) {
+  .practical-skills__counter-wrapper {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}

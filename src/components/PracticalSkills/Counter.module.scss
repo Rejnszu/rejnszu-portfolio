@@ -1,0 +1,26 @@
+.practical-skills__counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.counter__number {
+  color: var(--helper-color-2--brighter);
+  font-size: 2.5rem;
+}
+.counter__title {
+  color: var(--helper-color--1);
+  position: relative;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 4px;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--helper-color-2--darker);
+    filter: brightness(1.3);
+  }
+}

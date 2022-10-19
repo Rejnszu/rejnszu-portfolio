@@ -22,7 +22,7 @@ const ProjectItem = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
-          className={styles["project__link"]}
+          className={`${styles["project__reference"]} ${styles["project__reference--link"]}`}
           href={href}
         >
           <TfiWorld />
@@ -30,7 +30,7 @@ const ProjectItem = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
-          className={styles["project__code"]}
+          className={`${styles["project__reference"]} ${styles["project__reference--code"]}`}
           href={code}
         >
           <BiCodeAlt />

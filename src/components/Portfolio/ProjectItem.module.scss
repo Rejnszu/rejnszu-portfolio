@@ -19,34 +19,30 @@
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
     5px 5px 20px black;
 }
-.project__code {
+.project__reference {
   position: absolute;
   top: 0;
   margin: 6px;
   padding: 0.6rem 0.6rem 0 0.6rem;
   border-radius: 50%;
-  left: 0;
   z-index: 10;
-
+  transition: padding 0.3s, border 0.3s;
   border: 2px solid var(--helper-color-2--darker);
   color: var(--helper-color-2--brighter);
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.9);
+  &--code {
+    left: 0;
+  }
+  &--link {
+    right: 0;
+  }
+  &:hover {
+    padding: 0.8rem 0.8rem 0.2rem 0.8rem;
+    border-color: var(--helper-color-2--brighter);
+  }
 }
-.project__link {
-  position: absolute;
-  top: 0;
-  margin: 6px;
-  padding: 0.6rem 0.6rem 0 0.6rem;
-  border-radius: 50%;
-  right: 0;
-  z-index: 10;
 
-  border: 2px solid var(--helper-color-2--darker);
-  color: var(--helper-color-2--brighter);
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.9);
-}
 .project__title {
   text-align: center;
   margin: 1rem 0;

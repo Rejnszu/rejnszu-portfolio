@@ -35,13 +35,17 @@ const Contact = () => {
             </motion.p>
           </div>
 
-          <svg
+          <motion.svg
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 1 }}
             className={styles["contact__animated-triangle"]}
             height="400"
             width="400"
           >
             <motion.polygon
               animate={{
+                filter: ["brightness(1)", "brightness(1.7)", "brightness(1)"],
                 rotate: [0, 360],
                 scale: [1.4, 0.5, 1.4],
               }}
@@ -50,7 +54,7 @@ const Contact = () => {
               className={styles["triangle"]}
             />
             Sorry, your browser does not support inline SVG.
-          </svg>
+          </motion.svg>
 
           <div className={styles["contact__social-media"]}>
             <SmallTextElement flexPosition="center" delay={0.9}>
