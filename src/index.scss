@@ -8,10 +8,10 @@
 :root {
   --main-color: black;
   --backgroundColor: rgba(0, 0, 0, 0.7);
-  --helper-color-1: white;
+  --helper-color-1: #ffffff;
   --helper-color-2: rgb(95, 19, 95);
   --helper-color-2--darker: #420042;
-  --helper-color-2--brighter: rgb(161, 0, 161);
+  --helper-color-2--brighter: #a100a1;
   --border-radius: 3px;
 }
 body {
@@ -20,7 +20,7 @@ body {
   position: relative;
   overflow-x: hidden;
   font-family: "Oxygen Mono", monospace;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .page-wrapper {
   position: relative;

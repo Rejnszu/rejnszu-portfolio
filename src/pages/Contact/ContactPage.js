@@ -35,6 +35,23 @@ const Contact = () => {
             </motion.p>
           </div>
 
+          <svg
+            className={styles["contact__animated-triangle"]}
+            height="400"
+            width="400"
+          >
+            <motion.polygon
+              animate={{
+                rotate: [0, 360],
+                scale: [1.4, 0.5, 1.4],
+              }}
+              transition={{ duration: 7, delay: 1, repeat: Infinity }}
+              points="100,120 300,120 200,270"
+              className={styles["triangle"]}
+            />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+
           <div className={styles["contact__social-media"]}>
             <SmallTextElement flexPosition="center" delay={0.9}>
               Przez media społecznościowe

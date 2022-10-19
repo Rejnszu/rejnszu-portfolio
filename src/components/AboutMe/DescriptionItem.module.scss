@@ -2,10 +2,22 @@
   margin-bottom: 2rem;
 }
 .description__title {
+  display: inline-block;
+  position: relative;
   margin-bottom: 1rem;
   color: var(--helper-color-2--brighter);
   text-transform: uppercase;
   font-size: clamp(0.7rem, 4vw, 1.5rem);
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--helper-color-2--darker);
+    box-shadow: 3px 3px 5px var(--helper-color-2--darker);
+  }
 }
 .description__collapse {
   font-size: clamp(0.8rem, 3vw, 1.1rem);
