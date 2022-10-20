@@ -15,9 +15,9 @@
   &::after {
     position: absolute;
     content: "";
-    width: 50%;
-    height: 4px;
-    bottom: -25px;
+    width: 180px;
+    height: 6px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--helper-color-2--darker);

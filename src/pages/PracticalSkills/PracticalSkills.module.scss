@@ -23,6 +23,12 @@
   margin: 0;
   padding: 0;
 }
+.skills__spacer {
+  min-height: 100%;
+  width: 3px;
+  background-color: var(--helper-color-2--darker);
+  box-shadow: 3px 3px 5px black;
+}
 @media only screen and (max-width: 1300px) {
   .practical-skills__counter-wrapper {
     flex-direction: column;
@@ -37,5 +43,12 @@
   }
   .practical-skills__list {
     padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .skills__spacer {
+    min-width: 100%;
+    height: 3px;
+    background-color: var(--helper-color-2--darker);
+    box-shadow: 3px 3px 5px black;
   }
 }
