@@ -35,7 +35,12 @@ const ProjectItem = (props) => {
         >
           <BiCodeAlt />
         </a>
-        <img className={styles["project__image"]} src={img} alt={alt}></img>
+        <img
+          loading="lazy"
+          className={styles["project__image"]}
+          src={img}
+          alt={alt}
+        ></img>
         <p className={styles["project__title"]}>{title}</p>
 
         <Button onClick={() => setShowMoreInfo((prevState) => !prevState)}>

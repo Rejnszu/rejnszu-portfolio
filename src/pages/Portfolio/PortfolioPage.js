@@ -33,7 +33,7 @@ const Portfolio = () => {
 
         {displayedProjects === "websites" && (
           <div className={styles["projects__wrapper"]}>
-            {webSiteProjects.map((project) => {
+            {webSiteProjects.map((project, i) => {
               return (
                 <ProjectItem
                   code={project.code}

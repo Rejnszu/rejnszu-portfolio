@@ -4,6 +4,8 @@ import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import styles from "./PracticalSkills.module.scss";
+import { practicalSkills } from "../../components/PracticalSkills/PracticalSkillsList";
+import PracticalSkillItem from "../../components/PracticalSkills/PracticalSkillItem";
 const PracticalSkills = () => {
   return (
     <AnimatedPages page="practicalskills">
@@ -31,9 +33,36 @@ const PracticalSkills = () => {
             delay={2000}
           />
         </div>
-        <SmallTextElement delay={2} flexPosition="center">
-          Zaskutkowało tym że potrafie wykonać:
-        </SmallTextElement>
+        <div className={styles["practical-skills__skills-wrapper"]}>
+          <div className={styles["practical-skills__inner-wrapper"]}>
+            <SmallTextElement delay={3} flexPosition="center">
+              Zaskutkowało tym że potrafie wykonać:
+            </SmallTextElement>
+            <ul className={styles["practical-skills__list"]}>
+              {practicalSkills.general.map((skill, i) => {
+                return (
+                  <PracticalSkillItem delay={i * 0.3}>
+                    {skill}
+                  </PracticalSkillItem>
+                );
+              })}
+            </ul>
+          </div>
+          <div className={styles["practical-skills__inner-wrapper"]}>
+            <SmallTextElement delay={3} flexPosition="center">
+              Jestem w stanie zapewnić:
+            </SmallTextElement>
+            <ul className={styles["practical-skills__list"]}>
+              {practicalSkills.features.map((skill, i) => {
+                return (
+                  <PracticalSkillItem delay={i * 0.3}>
+                    {skill}
+                  </PracticalSkillItem>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
       </section>
     </AnimatedPages>
   );

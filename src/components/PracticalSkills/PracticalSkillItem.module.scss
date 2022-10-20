@@ -1,0 +1,13 @@
+.practical-skills {
+  margin: 1rem 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "\2713";
+    left: -30px;
+    color: var(--helper-color-2--brighter);
+    font-weight: 700;
+    font-size: 1.5rem;
+    top: -8px;
+  }
+}

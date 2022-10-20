@@ -11,9 +11,31 @@
 
   justify-content: space-around;
 }
+.practical-skills__skills-wrapper {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.practical-skills__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 1300px) {
   .practical-skills__counter-wrapper {
     flex-direction: column;
     row-gap: 50px;
+  }
+  .practical-skills__skills-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+  .practical-skills__list {
+    padding-left: 2rem;
   }
 }
