@@ -18,11 +18,11 @@ function App() {
   }, [location.pathname]);
   return (
     <div className="page-wrapper">
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
         {displayNavigation && (
           <Navigation
             onClick={() => setDisplayNavigation((prevState) => !prevState)}
-          ></Navigation>
+          />
         )}
       </AnimatePresence>
       {!displayNavigation && (
@@ -30,7 +30,7 @@ function App() {
           onClick={() => setDisplayNavigation((prevState) => !prevState)}
         />
       )}
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
         <Routes location={location} key={location.key}>
           {["/rejnszu-portfolio", "/omnie", "/"].map((path) => (
             <Route

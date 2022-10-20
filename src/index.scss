@@ -7,7 +7,7 @@
 
 :root {
   --main-color: black;
-  --backgroundColor: rgba(0, 0, 0, 0.7);
+  --backgroundColor: rgb(29, 29, 29);
   --helper-color-1: #ffffff;
   --helper-color-2: rgb(95, 19, 95);
   --helper-color-2--darker: #420042;
@@ -17,14 +17,13 @@
 body {
   padding: 0;
   margin: 0;
-  position: relative;
+
   overflow-x: hidden;
   font-family: "Oxygen Mono", monospace;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--backgroundColor);
 }
 .page-wrapper {
   position: relative;
-  overflow-x: hidden;
 }
 
 h1,
