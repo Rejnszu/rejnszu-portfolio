@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rejnszu-portfolio/static/css/main.6dd3ac29.css",
-    "main.js": "/rejnszu-portfolio/static/js/main.f97c94e2.js",
+    "main.css": "/rejnszu-portfolio/static/css/main.b0209eac.css",
+    "main.js": "/rejnszu-portfolio/static/js/main.c329bd2b.js",
     "static/media/newtool.webp": "/rejnszu-portfolio/static/media/newtool.b60583c3b6bbd48852e8.webp",
     "static/media/tictactoe.jpg": "/rejnszu-portfolio/static/media/tictactoe.c011edc5832d0a01e145.jpg",
     "static/media/sprawdzauto.webp": "/rejnszu-portfolio/static/media/sprawdzauto.71d77280c8d3f0d7874f.webp",
@@ -20,11 +20,11 @@
     "static/media/formularz.webp": "/rejnszu-portfolio/static/media/formularz.f07a568bcf76a81deea9.webp",
     "static/media/calculator.webp": "/rejnszu-portfolio/static/media/calculator.fc9b02d0eba39f9e6ba4.webp",
     "index.html": "/rejnszu-portfolio/index.html",
-    "main.6dd3ac29.css.map": "/rejnszu-portfolio/static/css/main.6dd3ac29.css.map",
-    "main.f97c94e2.js.map": "/rejnszu-portfolio/static/js/main.f97c94e2.js.map"
+    "main.b0209eac.css.map": "/rejnszu-portfolio/static/css/main.b0209eac.css.map",
+    "main.c329bd2b.js.map": "/rejnszu-portfolio/static/js/main.c329bd2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dd3ac29.css",
-    "static/js/main.f97c94e2.js"
+    "static/css/main.b0209eac.css",
+    "static/js/main.c329bd2b.js"
   ]
 }
