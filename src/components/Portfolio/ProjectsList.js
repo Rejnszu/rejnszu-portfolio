@@ -57,7 +57,7 @@ export const webSiteProjects = [
   },
 ];
 
-export const AppProjects = [
+export const appProjects = [
   {
     img: require("../../assets/apps/musify.webp"),
     alt: "Musify",

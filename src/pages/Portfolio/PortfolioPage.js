@@ -6,7 +6,7 @@ import SmallTextElement from "../../components/UI/SmallTextElement";
 import styles from "./Portfolio.module.scss";
 import ProjectItem from "../../components/Portfolio/ProjectItem";
 import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
-import { AppProjects } from "../../components/Portfolio/ProjectsList";
+import { appProjects } from "../../components/Portfolio/ProjectsList";
 
 const Portfolio = () => {
   const [displayedProjects, setDisplayedProjects] = useState("websites");
@@ -49,7 +49,7 @@ const Portfolio = () => {
         )}
         {displayedProjects === "apps" && (
           <div className={styles["projects__wrapper"]}>
-            {AppProjects.map((project) => {
+            {appProjects.map((project) => {
               return (
                 <ProjectItem
                   code={project.code}

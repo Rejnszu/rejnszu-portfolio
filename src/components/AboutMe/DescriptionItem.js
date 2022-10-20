@@ -6,7 +6,6 @@ const DescriptionItem = (props) => {
     <motion.div
       initial={{ opacity: 0, x: "200px" }}
       animate={{ opacity: 1, x: 0 }}
-      // viewport={{ once: true }}
       transition={{ duration: 0.5, delay: props.delay }}
       className={styles["description"]}
     >

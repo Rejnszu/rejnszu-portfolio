@@ -38,7 +38,7 @@ const PracticalSkills = () => {
         <div className={styles["practical-skills__skills-wrapper"]}>
           <div className={styles["practical-skills__inner-wrapper"]}>
             <SmallTextElement
-              delay={window.innerWidth > 1300 ? 3 : 1}
+              delay={window.innerWidth > 1300 ? 3 : 0}
               flexPosition="center"
             >
               Zaskutkowało tym że potrafie wykonać:
@@ -46,7 +46,10 @@ const PracticalSkills = () => {
             <ul className={styles["practical-skills__list"]}>
               {practicalSkills.general.map((skill, i) => {
                 return (
-                  <PracticalSkillItem delay={i * 0.3}>
+                  <PracticalSkillItem
+                    key={Math.random() * 1000}
+                    delay={window.innerWidth > 1300 ? i * 0.3 : -4}
+                  >
                     {skill}
                   </PracticalSkillItem>
                 );
@@ -61,7 +64,7 @@ const PracticalSkills = () => {
           />
           <div className={styles["practical-skills__inner-wrapper"]}>
             <SmallTextElement
-              delay={window.innerWidth > 1300 ? 3 : 1}
+              delay={window.innerWidth > 1300 ? 5 : 0}
               flexPosition="center"
             >
               Jestem w stanie zapewnić:
@@ -69,7 +72,10 @@ const PracticalSkills = () => {
             <ul className={styles["practical-skills__list"]}>
               {practicalSkills.features.map((skill, i) => {
                 return (
-                  <PracticalSkillItem delay={i * 0.3}>
+                  <PracticalSkillItem
+                    key={Math.random() * 1000}
+                    delay={window.innerWidth > 1300 ? i * 0.3 + 2 : -4}
+                  >
                     {skill}
                   </PracticalSkillItem>
                 );

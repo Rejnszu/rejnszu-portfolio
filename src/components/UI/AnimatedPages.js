@@ -46,6 +46,7 @@ const AnimatedPages = (props) => {
       style={{
         position: "absolute",
         width: "100%",
+        overflowX: "hidden",
       }}
     >
       <motion.div
