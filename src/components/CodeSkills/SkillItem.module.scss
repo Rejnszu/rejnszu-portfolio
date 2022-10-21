@@ -31,7 +31,7 @@
   margin: auto;
   border: 2px solid var(--helper-color-2);
   border-radius: var(--border-radius);
-  // transition: all 0.3s;
+
   box-shadow: 5px 5px 20px black;
   &:hover {
     border-color: var(--helper-color-2--brighter);
@@ -43,7 +43,7 @@
   overflow: hidden;
   display: flex;
   font-weight: 700;
-
+  font-family: "Oxygen Mono", monospace;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);

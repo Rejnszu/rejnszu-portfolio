@@ -2,12 +2,13 @@
   display: flex;
 }
 .text {
+  font-family: "Oxygen Mono", monospace;
   max-width: 100%;
   padding: 2rem 0.5rem;
   position: relative;
   isolation: isolate;
   margin: 4rem 1rem;
-  font-size: clamp(0.7rem, 4vw, 1.2rem);
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
   & span {
     position: absolute;
     right: 0;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap");
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -7,7 +8,7 @@
 
 :root {
   --main-color: black;
-  --backgroundColor: rgb(29, 29, 29);
+  --backgroundColor: rgb(31, 31, 31);
   --helper-color-1: #ffffff;
   --helper-color-2: rgb(95, 19, 95);
   --helper-color-2--darker: #420042;
@@ -19,7 +20,7 @@ body {
   margin: 0;
 
   overflow-x: hidden;
-  font-family: "Oxygen Mono", monospace;
+  font-family: "Poppins", sans-serif;
   background-color: var(--backgroundColor);
 }
 .page-wrapper {
