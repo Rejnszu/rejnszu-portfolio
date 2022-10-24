@@ -8,8 +8,7 @@ import MoreInfoModal from "../../components/UI/MoreInfoModal";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
-  const { alt, img, title, href, code } = { ...props };
-
+  const { alt, img, title, href, code, technologies, description } = props;
   return (
     <React.Fragment>
       <motion.div
@@ -47,7 +46,14 @@ const ProjectItem = (props) => {
           {showMoreInfo ? "Mniej informacji" : "Więcej informacji"}
         </Button>
         <AnimatePresence>
-          {showMoreInfo && <MoreInfoModal alt={alt} />}
+          {showMoreInfo && (
+            <MoreInfoModal
+              onClick={() => setShowMoreInfo((prevState) => !prevState)}
+              technologies={technologies}
+              description={description}
+              alt={alt}
+            />
+          )}
         </AnimatePresence>
       </motion.div>
     </React.Fragment>

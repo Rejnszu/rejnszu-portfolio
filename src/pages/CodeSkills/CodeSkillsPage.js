@@ -19,15 +19,7 @@ const CodeSkills = () => {
         <div className={styles["skills"]}>
           <ul className={styles["skills__list"]}>
             {skills.map((skill, index) => {
-              return (
-                <SkillItem
-                  index={index}
-                  key={index}
-                  name={skill.name}
-                  percent={skill.percent}
-                  icon={skill.icon}
-                />
-              );
+              return <SkillItem index={index} key={index} {...skill} />;
             })}
           </ul>
         </div>

@@ -3,7 +3,7 @@ import styles from "./Heading.module.scss";
 import { motion } from "framer-motion";
 const Heading = (props) => {
   return (
-    <motion.div
+    <motion.header
       key={props.name}
       animate={{ scale: [0, 1.2, 1] }}
       transition={{
@@ -37,7 +37,7 @@ const Heading = (props) => {
         ></motion.span>
         {props.text}
       </h1>
-    </motion.div>
+    </motion.header>
   );
 };
 

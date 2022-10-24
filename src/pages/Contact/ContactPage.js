@@ -18,16 +18,16 @@ const Contact = () => {
               Bezpośrednio
             </SmallTextElement>
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
               className={styles["contact__direct-message__item"]}
             >
               Numer Telefonu: 609-660-472
             </motion.p>
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
               className={styles["contact__direct-message__item"]}
             >

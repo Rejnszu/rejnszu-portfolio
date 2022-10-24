@@ -22,8 +22,9 @@
     &:hover {
       color: var(--helper-color-2--brighter);
     }
-    &:focus {
+    &.active {
       color: var(--helper-color-2--brighter);
+      transform: scale(1.2);
       outline: none;
       border: none;
     }

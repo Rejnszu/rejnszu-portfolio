@@ -21,7 +21,7 @@ const AboutMe = () => {
               alt="photo_of_me"
             />
             <figcaption>
-              Jakby dla kogoś miało znaczenie jak wyglądam.
+              Jakby kogoś interesowało jak wyglądam.
               <br />
               Lepszego nie znalazłem.
             </figcaption>
