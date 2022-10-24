@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rejnszu-portfolio/static/css/main.4585582d.css",
+    "main.css": "/rejnszu-portfolio/static/css/main.e2364b62.css",
     "main.js": "/rejnszu-portfolio/static/js/main.af625aa8.js",
     "static/media/newtool.webp": "/rejnszu-portfolio/static/media/newtool.b60583c3b6bbd48852e8.webp",
     "static/media/tictactoe.jpg": "/rejnszu-portfolio/static/media/tictactoe.c011edc5832d0a01e145.jpg",
@@ -20,11 +20,11 @@
     "static/media/formularz.webp": "/rejnszu-portfolio/static/media/formularz.f07a568bcf76a81deea9.webp",
     "static/media/calculator.webp": "/rejnszu-portfolio/static/media/calculator.fc9b02d0eba39f9e6ba4.webp",
     "index.html": "/rejnszu-portfolio/index.html",
-    "main.4585582d.css.map": "/rejnszu-portfolio/static/css/main.4585582d.css.map",
+    "main.e2364b62.css.map": "/rejnszu-portfolio/static/css/main.e2364b62.css.map",
     "main.af625aa8.js.map": "/rejnszu-portfolio/static/js/main.af625aa8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4585582d.css",
+    "static/css/main.e2364b62.css",
     "static/js/main.af625aa8.js"
   ]
 }
