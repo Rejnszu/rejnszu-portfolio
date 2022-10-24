@@ -18,8 +18,10 @@
 body {
   padding: 0;
   margin: 0;
-
+  position: relative;
   overflow-x: hidden;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
   font-family: "Poppins", sans-serif;
   background-color: var(--backgroundColor);
 }
@@ -43,6 +45,7 @@ p {
 .next-page {
   position: fixed;
   height: 100%;
+  z-index: 1;
   background-color: var(--helper-color-2--darker);
   top: 0;
   right: 0;
@@ -53,7 +56,7 @@ p {
   font-size: 2rem;
   padding: 0 10px;
   width: auto;
-  transition: all 0.3s;
+
   cursor: pointer;
 
   &:hover {

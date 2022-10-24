@@ -18,25 +18,32 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
     5px 5px 20px black;
+  &:hover .project__reference {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .project__reference {
   font-family: "Oxygen Mono", monospace;
   position: absolute;
   top: 0;
+  opacity: 0;
   margin: 6px;
   padding: 0.6rem 0.6rem 0 0.6rem;
   border-radius: 50%;
   z-index: 10;
-  transition: padding 0.3s, border 0.3s;
+  transition: all 0.3s;
   border: 2px solid var(--helper-color-2--darker);
   color: var(--helper-color-2--brighter);
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.9);
   &--code {
     left: 0;
+    transform: translateX(-50px);
   }
   &--link {
     right: 0;
+    transform: translateX(50px);
   }
   &:hover {
     padding: 0.8rem 0.8rem 0.2rem 0.8rem;
@@ -62,4 +69,10 @@
 
   box-shadow: 0px 20px 40px black;
   border-radius: 15px;
+}
+@media only screen and (max-width: 900px) {
+  .project__reference {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

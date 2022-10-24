@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import GlobalVariablesContext from "../../context/GlobalVariables";
 
 const Navigation = (props) => {
+  const globalVariablesCtx = useContext(GlobalVariablesContext);
   return (
     <motion.div
       key="navigation"
@@ -14,7 +16,13 @@ const Navigation = (props) => {
       transition={{ duration: 0.2 }}
     >
       <div className={styles.backdrop} onClick={props.onClick}></div>
-      <nav className={styles.navigation} onClick={props.onClick}>
+      <nav
+        className={styles.navigation}
+        onClick={() => {
+          props.onClick();
+          globalVariablesCtx.hideNextPageButtonHandler();
+        }}
+      >
         <ul className={styles.navigation__list}>
           <Link to={"/omnie"}>
             <li style={{ "--i": 5 }}>O mnie</li>
