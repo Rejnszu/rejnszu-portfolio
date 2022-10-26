@@ -13,7 +13,7 @@ const NotFound = () => {
         color: "white",
       }}
     >
-      <SmallTextElement>Strona nie istnieje.</SmallTextElement>
+      <SmallTextElement delay={0.1}>Strona nie istnieje.</SmallTextElement>
     </div>
   );
 };

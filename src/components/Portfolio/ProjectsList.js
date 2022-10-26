@@ -37,7 +37,7 @@ export const webSiteProjects = [
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Moja pierwsza wersja strony portfolio, zastąpiona przez obecną gdyż mimo, iż wizualnie nie uważam jej za złą, jakość kodu juz tak dobrze nie wypada",
-    code: "https://github.com/Rejnszu?tab=repositories",
+    code: "https://github.com/Rejnszu/Portfolio",
   },
   {
     img: require("../../assets/websites/sprawdzauto.webp"),
