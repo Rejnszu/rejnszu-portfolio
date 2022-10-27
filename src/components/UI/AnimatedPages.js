@@ -13,12 +13,16 @@ const AnimatedPages = (props) => {
   const nextPage = () => {
     globalVariablesCtx.hideNextPageButtonHandler();
     switch (location.pathname) {
+      case "/":
+        navigate("/umiejetnoscikodowania");
+        break;
       case "/rejnszu-portfolio/":
         navigate("/umiejetnoscikodowania");
         break;
       case "/omnie":
         navigate("/umiejetnoscikodowania");
         break;
+
       case "/umiejetnoscikodowania":
         navigate("/umiejetnoscipraktyczne");
         break;

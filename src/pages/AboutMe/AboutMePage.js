@@ -72,7 +72,8 @@ const AboutMe = () => {
         </div>
         <SmallTextElement flexPosition="center">
           Wciąż za mało informacji? Sprawdź się moim{" "}
-          <CustomLink href="https://rejnszu.pl/quiz/">quizie</CustomLink>!
+          <CustomLink href="https://rejnszu.github.io/Quiz/">quizie</CustomLink>
+          !
         </SmallTextElement>
       </section>
     </AnimatedPages>

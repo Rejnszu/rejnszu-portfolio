@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 const GlobalVariablesContext = React.createContext({
-  mhideNextPageButtonap: false,
+  hideNextPageButton: false,
   hideNextPageButtonHandler: () => {},
   showNextPageButtonHandler: () => {},
 });

@@ -1,26 +1,38 @@
-.skills__list__item {
+.skills__item {
   max-width: 100%;
+  position: relative;
+  &:hover .skills__additional-informations {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    animation: rotate 15s 0.5s infinite linear;
+  }
+  &:hover .additional-informations__element {
+    animation: rotate1 15s 0.5s infinite linear;
+  }
+  &:hover .additional-informations__center-icon {
+    animation: rotate2 15s 0.5s infinite linear;
+  }
 }
-.skills__list__item__inner-wrapper {
+.skills__inner-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.skills__list__item__name {
+.skills__name {
   text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.skills__list__item__icon {
+.skills__icon {
   text-align: center;
   font-size: 2rem;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-.skills__list__item__level {
+.skills__level {
   position: relative;
   padding: 0.25rem;
   height: 40px;
@@ -45,4 +57,71 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
+}
+.skills__additional-informations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s;
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px dashed white;
+}
+@mixin position($top, $left) {
+  position: absolute;
+  left: $left;
+  top: $top;
+}
+.additional-informations__center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+.additional-informations__element {
+  font-size: 0.9rem;
+  &--1 {
+    @include position(75px, 40px);
+  }
+  &--2 {
+    @include position(75px, 160px);
+  }
+  &--3 {
+    @include position(200px, 170px);
+  }
+  &--4 {
+    @include position(200px, 30px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
 }

@@ -33,7 +33,7 @@ export const webSiteProjects = [
     img: require("../../assets/websites/portfolio.webp"),
     alt: "Stare Portfolio",
     title: "Stare Portfolio",
-    href: "https://rejnszu.pl/",
+    href: "https://rejnszu.github.io/Portfolio/",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Moja pierwsza wersja strony portfolio, zastąpiona przez obecną gdyż mimo, iż wizualnie nie uważam jej za złą, jakość kodu juz tak dobrze nie wypada",

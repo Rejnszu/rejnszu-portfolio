@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/rejnszu-portfolio",
+  "homepage": "https://rejnszu.pl",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",

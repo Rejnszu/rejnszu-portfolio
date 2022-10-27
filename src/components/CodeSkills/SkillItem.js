@@ -3,7 +3,7 @@ import styles from "./SkillItem.module.scss";
 import { motion } from "framer-motion";
 
 const SkillItem = (props) => {
-  const { name, percent, index, icon } = props;
+  const { name, percent, index, icon, additionals } = props;
   const fillingWidth = `${percent}`;
 
   return (
@@ -11,9 +11,9 @@ const SkillItem = (props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className={styles["skills__list__item"]}
+      className={styles["skills__item"]}
     >
-      <div className={styles["skills__list__item__inner-wrapper"]}>
+      <div className={styles["skills__inner-wrapper"]}>
         <motion.p
           initial={{ y: "-30px", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -26,7 +26,7 @@ const SkillItem = (props) => {
               ease: "linear",
             },
           }}
-          className={styles["skills__list__item__name"]}
+          className={styles["skills__name"]}
         >
           {name}
         </motion.p>
@@ -42,12 +42,12 @@ const SkillItem = (props) => {
               ease: "linear",
             },
           }}
-          className={styles["skills__list__item__icon"]}
+          className={styles["skills__icon"]}
         >
           {icon}
         </motion.p>
       </div>
-      <div className={styles["skills__list__item__level"]}>
+      <div className={styles["skills__level"]}>
         <motion.div
           key={index}
           initial={{ width: 0 }}
@@ -59,6 +59,24 @@ const SkillItem = (props) => {
           {percent}
         </motion.div>
       </div>
+      {additionals && (
+        <div className={styles["skills__additional-informations"]}>
+          <span className={styles["additional-informations__center-icon"]}>
+            {icon}
+          </span>
+          {additionals?.map((additional, i) => {
+            return (
+              <span
+                className={`${styles["additional-informations__element"]} ${
+                  styles["additional-informations__element--" + (i + 1)]
+                }`}
+              >
+                {additional}
+              </span>
+            );
+          })}
+        </div>
+      )}
     </motion.div>
   );
 };
