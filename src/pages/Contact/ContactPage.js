@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import SocialIcons from "../../components/Contact/SocialIcons";
+import ContactForm from "../../components/Contact/ContactForm";
 
 const Contact = () => {
   return (
     <AnimatedPages page="contact">
-      <section className={`${styles["contact"]} section-padding`}>
+      <section className={`${styles["contact"]} section-padding default-page`}>
         <Heading text="Jak się można ze mną skontaktować" />
         <div className={styles["contact__inner-wrapper"]}>
           <div className={styles["contact__direct-message"]}>
@@ -77,8 +78,9 @@ const Contact = () => {
           </div>
         </div>
         <SmallTextElement flexPosition="center" delay={1}>
-          Kontakuj się śmiało!
+          Poprzez Formularz
         </SmallTextElement>
+        <ContactForm />
       </section>
     </AnimatedPages>
   );

@@ -8,7 +8,9 @@ import { skills } from "../../components/CodeSkills/SkillsList";
 const CodeSkills = () => {
   return (
     <AnimatedPages page="codeskills">
-      <section className={`${styles["code-skills"]} section-padding`}>
+      <section
+        className={`${styles["code-skills"]} section-padding default-page`}
+      >
         <Heading
           name="aboutme-heading"
           text="Technologie z których korzystam na co dzień"

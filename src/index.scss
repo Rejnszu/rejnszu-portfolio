@@ -8,7 +8,7 @@
 
 :root {
   --main-color: black;
-  --backgroundColor: rgb(32, 32, 32);
+  --backgroundColor: rgb(0, 0, 0);
   --helper-color-1: #ffffff;
   --helper-color-2: rgb(95, 19, 95);
   --helper-color-2--darker: #420042;
@@ -18,12 +18,19 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
+
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
   font-family: "Poppins", sans-serif;
-  background-color: var(--backgroundColor);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/others/tło2-cut.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .page-wrapper {
   position: relative;
@@ -37,6 +44,11 @@ p {
 .center-item {
   display: flex;
   justify-content: center;
+}
+.default-page {
+  background-color: transparent;
+  color: white;
+  min-height: 100vh;
 }
 .section-padding {
   padding-top: 5rem;

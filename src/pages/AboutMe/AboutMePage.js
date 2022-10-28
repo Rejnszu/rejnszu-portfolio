@@ -2,7 +2,7 @@ import React from "react";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import styles from "./AboutMe.module.scss";
-import myImage from "../../assets/hobbiton-min.webp";
+import myImage from "../../assets/others/hobbiton-min.webp";
 import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 
 import SmallTextElement from "../../components/UI/SmallTextElement";
@@ -11,7 +11,7 @@ import CustomLink from "../../components/UI/CustomLink";
 const AboutMe = () => {
   return (
     <AnimatedPages page="aboutme">
-      <section className={`${styles["about-me"]} section-padding`}>
+      <section className={`${styles["about-me"]} section-padding default-page`}>
         <Heading text="Łukasz Rejnsz, Twój nowy Front-End Developer" />
         <div className={styles["about-me__informations"]}>
           <div className={styles["informations__my-photo__wrapper"]}>

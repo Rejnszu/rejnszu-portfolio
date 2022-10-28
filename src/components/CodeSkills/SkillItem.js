@@ -67,6 +67,7 @@ const SkillItem = (props) => {
           {additionals?.map((additional, i) => {
             return (
               <span
+                key={i}
                 className={`${styles["additional-informations__element"]} ${
                   styles["additional-informations__element--" + (i + 1)]
                 }`}

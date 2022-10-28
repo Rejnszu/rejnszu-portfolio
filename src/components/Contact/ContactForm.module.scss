@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+
+  row-gap: 15px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+}
+.form__label {
+  font-family: "Oxygen Mono", monospace;
+}
+.form__input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  &:focus {
+    box-shadow: inset 0 0 3px var(--helper-color-2--darker);
+    outline: none;
+  }
+}
+.loading-mail {
+  text-align: center;
+}
+.succesful-mail {
+  text-align: center;
+  color: rgb(0, 165, 0);
+}
+.unsuccesful-mail {
+  text-align: center;
+  color: red;
+}
