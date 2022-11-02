@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
   color: var(--helper-color-2--brighter);
   text-transform: uppercase;
-  font-size: clamp(0.7rem, 4vw, 1.5rem);
+  font-size: clamp(0.7rem, 4vw, 1.3rem);
   &::after {
     position: absolute;
     left: 0;
@@ -20,5 +20,5 @@
   }
 }
 .description__collapse {
-  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }

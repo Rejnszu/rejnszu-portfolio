@@ -8,21 +8,77 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .informations__my-photo__wrapper {
   flex: 0 0 35%;
-  margin-top: auto;
-  margin-bottom: auto;
-  & figcaption {
-    font-size: clamp(0.6rem, 3vw, 1rem);
+  min-height: 970px;
+  margin: auto;
+  transition: filter 0.3s;
+  filter: drop-shadow(0 0 5px var(--helper-color-2--brighter));
+  position: relative;
+
+  &--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+    & figcaption {
+      font-size: clamp(0.6rem, 3vw, 1rem);
+    }
+  }
+  &:hover .informations__my-photo {
+    transform: translate(0, 0);
   }
 }
+
 .informations__my-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   max-width: 100%;
-  margin-bottom: 1rem;
+  transition: transform 300ms ease;
   border-radius: var(--border-radius);
-  box-shadow: 5px 5px 20px var(--helper-color-2);
   filter: grayscale(0.5);
+  transform-origin: left;
+
+  &--mobile {
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px 3px var(--helper-color-2--brighter);
+    filter: grayscale(0.5);
+    max-width: 80%;
+  }
+  &:nth-of-type(1) {
+    clip-path: polygon(0 0, 0 29%, 47% 0);
+    transform: translate(-25px, -15px);
+
+    transform-origin: top;
+  }
+
+  &:nth-of-type(2) {
+    clip-path: polygon(0 29%, 0 100%, 22% 100%, 89% 0, 47% 0);
+    transform: translate(-48px, 5px);
+  }
+
+  &:nth-of-type(3) {
+    clip-path: polygon(100% 58%, 60% 100%, 22% 100%, 89% 0, 100% 0);
+    transform: translate(-41px, -15px);
+  }
+
+  &:nth-of-type(4) {
+    clip-path: polygon(100% 58%, 60% 100%, 100% 100%);
+
+    transform: translate(-68px, 25px);
+
+    transform-origin: top;
+  }
 }
+
 .informations__description {
   padding: 1rem 2rem;
   flex: 0 0 60%;
@@ -44,14 +100,7 @@
     flex-direction: column;
     margin-top: 3rem;
   }
-  .informations__my-photo__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & img {
-      max-width: 80%;
-    }
-  }
+
   .informations__description {
     margin-top: 2rem;
     padding: 1rem 1rem;

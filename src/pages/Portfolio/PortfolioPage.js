@@ -21,9 +21,7 @@ const Portfolio = () => {
   };
   return (
     <AnimatedPages page="portfolio">
-      <section
-        className={`${styles["portfolio"]} section-padding default-page`}
-      >
+      <section className={`section-padding default-page`}>
         <Heading text="Portfolio" />
         <SmallTextElement delay={0.2} flexPosition="center">
           Poniżej przedstawiam pare moich ukończonych projektów.

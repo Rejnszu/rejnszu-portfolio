@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect } from "react";
+import { useState, useRef } from "react";
 import Button from "../UI/Button";
 import styles from "./ContactForm.module.scss";
 import { motion } from "framer-motion";
@@ -11,6 +11,7 @@ const ContactForm = () => {
   const [mailSent, setMailSent] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const formRef = useRef(null);
   const sendEmail = async (mailObject) => {
     const response = await fetch(`https://rejnszu.pl/index.php`, {
       method: "POST",
@@ -20,6 +21,18 @@ const ContactForm = () => {
       },
     });
   };
+
+  useEffect(() => {
+    const wrappers = formRef.current.querySelectorAll("div");
+
+    Array.from(wrappers).forEach((wrapper) => {
+      for (let i = 0; i < 4; i++) {
+        const span = document.createElement("span");
+
+        wrapper.append(span);
+      }
+    });
+  }, []);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -35,18 +48,18 @@ const ContactForm = () => {
       .then((result) => {
         setLoading(false);
         setMailSent(true);
+        setName("");
+        setMail("");
+        setMessage("");
       })
       .catch((error) => {
         setLoading(false);
         setError(true);
       });
-
-    setName("");
-    setMail("");
-    setMessage("");
   };
   return (
     <motion.form
+      ref={formRef}
       action="#"
       onSubmit={onFormSubmit}
       initial={{ opacity: 0 }}
@@ -54,47 +67,65 @@ const ContactForm = () => {
       transition={{ delay: 1.5, duration: 0.5 }}
       className={styles.form}
     >
-      <label className={styles["form__label"]} htmlFor="name">
+      <label
+        data-content="Imie"
+        className={styles["form__label"]}
+        htmlFor="name"
+      >
         Imie
       </label>
-      <input
-        value={name}
-        type="text"
-        required
-        className={styles["form__input"]}
-        id="name"
-        aria-label="name"
-        onChange={(e) => {
-          setName(e.target.value);
-        }}
-      />
-      <label className={styles["form__label"]} htmlFor="email">
+      <div className={styles["form__input-wrapper"]}>
+        <input
+          value={name}
+          type="text"
+          required
+          className={styles["form__input"]}
+          id="name"
+          aria-label="name"
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+      </div>
+      <label
+        data-content="E-mail"
+        className={styles["form__label"]}
+        htmlFor="email"
+      >
         E-mail
       </label>
-      <input
-        value={mail}
-        type="email"
-        required
-        className={styles["form__input"]}
-        id="email"
-        aria-label="email"
-        onChange={(e) => {
-          setMail(e.target.value);
-        }}
-      />
-      <label className={styles["form__label"]} htmlFor="message">
+      <div className={styles["form__input-wrapper"]}>
+        <input
+          value={mail}
+          type="email"
+          required
+          className={styles["form__input"]}
+          id="email"
+          aria-label="email"
+          onChange={(e) => {
+            setMail(e.target.value);
+          }}
+        />
+      </div>
+      <label
+        data-content="Wiadomość"
+        className={`${styles["form__label"]} ${styles["form__label--textarea"]}`}
+        htmlFor="message"
+      >
         Wiadomość
       </label>
-      <textarea
-        value={message}
-        className={styles["form__input"]}
-        id="message"
-        rows="10"
-        aria-label="message"
-        onChange={(e) => {
-          setMessage(e.target.value);
-        }}
-      />
+      <div className={styles["form__input-wrapper"]}>
+        <textarea
+          value={message}
+          className={styles["form__input"]}
+          id="message"
+          rows="15"
+          aria-label="message"
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+        />
+      </div>
       <Button type="submit">Wyślij</Button>
       {loading && <p className={styles["loading-mail"]}>Trwa wysyłanie.</p>}
       {mailSent && (

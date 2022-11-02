@@ -10,9 +10,7 @@ import PracticalSkillItem from "../../components/PracticalSkills/PracticalSkillI
 const PracticalSkills = () => {
   return (
     <AnimatedPages page="practicalskills">
-      <section
-        className={`${styles["practical-skills"]} section-padding default-page`}
-      >
+      <section className={`section-padding default-page`}>
         <Heading text="Co mogę dla Ciebie wykonać" />
         <div className={styles["practical-skills__counter-wrapper"]}>
           <Counter

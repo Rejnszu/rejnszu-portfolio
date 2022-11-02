@@ -11,7 +11,7 @@ import ContactForm from "../../components/Contact/ContactForm";
 const Contact = () => {
   return (
     <AnimatedPages page="contact">
-      <section className={`${styles["contact"]} section-padding default-page`}>
+      <section className={`section-padding default-page`}>
         <Heading text="Jak się można ze mną skontaktować" />
         <div className={styles["contact__inner-wrapper"]}>
           <div className={styles["contact__direct-message"]}>
