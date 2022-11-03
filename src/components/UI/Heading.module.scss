@@ -1,3 +1,5 @@
+$blue: blue;
+
 .heading-center {
   display: flex;
   justify-content: center;
@@ -9,30 +11,30 @@
   max-width: 90%;
   font-size: clamp(1.2rem, 5vw, 2rem);
   position: relative;
-  & span {
+  span {
     position: absolute;
     content: "";
     background-color: var(--helper-color-2);
   }
-  & span:nth-child(1) {
+  span:nth-child(1) {
     left: 0;
     bottom: 0;
     width: 30px;
     height: 3px;
   }
-  & span:nth-child(2) {
+  span:nth-child(2) {
     left: 0;
     bottom: 0;
     width: 3px;
     height: 30px;
   }
-  & span:nth-child(3) {
+  span:nth-child(3) {
     right: 0;
     top: 0;
     width: 30px;
     height: 3px;
   }
-  & span:nth-child(4) {
+  span:nth-child(4) {
     right: 0;
     top: 0;
     width: 3px;

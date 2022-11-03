@@ -19,30 +19,30 @@
   border-radius: var(--border-radius);
   position: relative;
   overflow: hidden;
-  & span {
+  span {
     position: absolute;
     background-color: var(--helper-color-2--brighter);
     transition: all 0.5s;
   }
-  & span:nth-of-type(1) {
+  span:nth-of-type(1) {
     height: 0%;
     width: 2px;
     left: 0;
     top: 0;
   }
-  & span:nth-of-type(2) {
+  span:nth-of-type(2) {
     height: 0%;
     width: 2px;
     right: 0;
     bottom: 0;
   }
-  & span:nth-of-type(3) {
+  span:nth-of-type(3) {
     height: 2px;
     width: 0%;
     left: 0;
     top: 0;
   }
-  & span:nth-of-type(4) {
+  span:nth-of-type(4) {
     height: 2px;
     width: 0%;
     right: 0;

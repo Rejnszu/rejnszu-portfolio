@@ -25,9 +25,12 @@
   margin: 5rem auto;
   color: var(--main-color);
   animation: upAndDown 8s infinite linear;
-  & a {
+  a {
     text-decoration: none;
     color: inherit;
+    &:last-child li::after {
+      animation: growingBoxShadow 8s infinite linear;
+    }
   }
 }
 @keyframes upAndDown {
@@ -57,52 +60,49 @@
   border: 1px solid black;
   z-index: var(--i);
   opacity: 1;
-}
-.navigation__list li.inactive {
-  opacity: 0;
-  transform: translateY(-50px);
-}
-.navigation__list li:hover {
-  color: white;
-  transform: translateX(-40px);
-  background-color: rgb(0, 0, 0);
-  border: 1px solid var(--helper-color-2);
-}
-.navigation__list li::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -41px;
-  background-color: white;
-  border: 1px solid black;
-  transform: skewY(45deg);
-  height: 100%;
-  width: 38px;
-  transform-origin: right;
-  transition: all 0.5s;
-}
-.navigation__list li::after {
-  position: absolute;
-  border: 1px solid black;
-  content: "";
-  top: -40px;
-  left: 0;
-  background-color: white;
-  transform: skewX(45deg);
-  transform-origin: bottom;
-  height: 40px;
-  transition: all 0.5s;
-  width: 100%;
+  &.inactive {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  &:hover {
+    color: white;
+    transform: translateX(-40px);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid var(--helper-color-2);
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -41px;
+    background-color: white;
+    border: 1px solid black;
+    transform: skewY(45deg);
+    height: 100%;
+    width: 38px;
+    transform-origin: right;
+    transition: all 0.5s;
+  }
+  &::after {
+    position: absolute;
+    border: 1px solid black;
+    content: "";
+    top: -40px;
+    left: 0;
+    background-color: white;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    height: 40px;
+    transition: all 0.5s;
+    width: 100%;
+  }
+  &:hover::before,
+  &:hover::after {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid var(--helper-color-2);
+  }
 }
 
-.navigation__list li:hover::before,
-.navigation__list li:hover::after {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid var(--helper-color-2);
-}
-.navigation__list a:last-child li::after {
-  animation: growingBoxShadow 8s infinite linear;
-}
 @keyframes growingBoxShadow {
   0% {
     box-shadow: -120px 120px 20px rgba(255, 255, 255, 0.226);

@@ -14,7 +14,7 @@ const CustomLink = (props) => {
       <motion.span
         initial={{ opacity: 0, x: "100px", y: "100px" }}
         whileInView={{ opacity: 1, x: "10px", y: "30px" }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: props.delay }}
         className={styles["custom-link__cursor"]}
       >
         <FaHandPointer />

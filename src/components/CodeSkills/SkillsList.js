@@ -9,6 +9,7 @@ import {
   SiWordpress,
   SiPhp,
   SiGit,
+  SiTypescript,
 } from "react-icons/si";
 
 export const skills = [
@@ -34,6 +35,7 @@ export const skills = [
     icon: <SiRedux />,
     additionals: ["Redux Toolkit"],
   },
+  { name: "TYPESCRIPT", percent: "20%", icon: <SiTypescript /> },
   { name: "WORDPRESS", percent: "30%", icon: <SiWordpress /> },
   { name: "PHP", percent: "20%", icon: <SiPhp /> },
   { name: "GIT", percent: "60%", icon: <SiGit /> },

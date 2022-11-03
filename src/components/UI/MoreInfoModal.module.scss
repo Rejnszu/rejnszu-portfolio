@@ -54,13 +54,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   color: white;
   margin: 1.2rem 0;
-  & li {
+  li {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
     gap: 5px;
   }
-  & svg {
+  svg {
     fill: var(--helper-color-2--brighter);
     font-size: 1.2rem;
   }

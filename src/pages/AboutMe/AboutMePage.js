@@ -4,10 +4,10 @@ import Heading from "../../components/UI/Heading";
 import styles from "./AboutMe.module.scss";
 import myImage from "../../assets/others/hobbiton-min.webp";
 import DescriptionItem from "../../components/AboutMe/DescriptionItem";
+import CustomLink from "../../components/UI/CustomLink";
 
 import SmallTextElement from "../../components/UI/SmallTextElement";
 
-import CustomLink from "../../components/UI/CustomLink";
 const AboutMe = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
   useEffect(() => {
@@ -90,7 +90,15 @@ const AboutMe = () => {
               dalej i nie sprawdzić swoich sił w prawdziwym świecie. Po długich
               analizach wymagań i odpowiednim, tak mi się wydaje, doszkoleniu
               się, doszedłem do punktu w którym mogę probówać połączyć swoje
-              hobby z karierą zawodową.
+              hobby z karierą zawodową. Chcesz dowiedzieć się więcej na mój
+              temat? Sprawdź mój{" "}
+              <CustomLink
+                delay={isMobile ? 0.3 : 2}
+                href="https://rejnszu.pl/cover.pdf"
+              >
+                list motywacyjny
+              </CustomLink>
+              .
             </DescriptionItem>
             <DescriptionItem title="Moja kariera" delay={1.1}>
               Skończyłem studia inżynierskie na kierunku energetyka, ale w
@@ -117,7 +125,9 @@ const AboutMe = () => {
         </div>
         <SmallTextElement flexPosition="center">
           Wciąż za mało informacji? Sprawdź się moim{" "}
-          <CustomLink href="https://rejnszu.github.io/Quiz/">quizie</CustomLink>
+          <CustomLink delay={0.4} href="https://rejnszu.github.io/Quiz/">
+            quizie
+          </CustomLink>
           !
         </SmallTextElement>
       </section>
