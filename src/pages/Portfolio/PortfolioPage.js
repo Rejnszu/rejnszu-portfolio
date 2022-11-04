@@ -1,9 +1,8 @@
 import React, { useState, useRef } from "react";
-
+import styles from "./Portfolio.module.scss";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
-import styles from "./Portfolio.module.scss";
 import ProjectItem from "../../components/Portfolio/ProjectItem";
 import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
 import { appProjects } from "../../components/Portfolio/ProjectsList";
@@ -12,6 +11,7 @@ const Portfolio = () => {
   const selectRef = useRef(null);
 
   const [displayedProjects, setDisplayedProjects] = useState("websites");
+
   const changeDisplayedProjects = (e) => {
     Array.from(selectRef.current.children).forEach((child) =>
       child.classList.remove(`${styles["active"]}`)
@@ -19,9 +19,10 @@ const Portfolio = () => {
     e.currentTarget.classList.add(`${styles["active"]}`);
     setDisplayedProjects(e.currentTarget.getAttribute("data-display"));
   };
+
   return (
     <AnimatedPages page="portfolio">
-      <section className={`section-padding default-page`}>
+      <section className={"section-padding default-page"}>
         <Heading text="Portfolio" />
         <SmallTextElement delay={0.2} flexPosition="center">
           Poniżej przedstawiam pare moich ukończonych projektów.
@@ -41,7 +42,7 @@ const Portfolio = () => {
 
         {displayedProjects === "websites" && (
           <div className={styles["projects__wrapper"]}>
-            {webSiteProjects.map((project, i) => {
+            {webSiteProjects.map((project) => {
               return <ProjectItem {...project} key={project.alt} />;
             })}
           </div>

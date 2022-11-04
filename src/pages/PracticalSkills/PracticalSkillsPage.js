@@ -1,10 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
+import styles from "./PracticalSkills.module.scss";
 import Counter from "../../components/PracticalSkills/Counter";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
-import styles from "./PracticalSkills.module.scss";
-import { motion } from "framer-motion";
 import { practicalSkills } from "../../components/PracticalSkills/PracticalSkillsList";
 import PracticalSkillItem from "../../components/PracticalSkills/PracticalSkillItem";
 const PracticalSkills = () => {

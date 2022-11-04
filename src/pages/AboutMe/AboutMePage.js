@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import styles from "./AboutMe.module.scss";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
-import styles from "./AboutMe.module.scss";
 import myImage from "../../assets/others/hobbiton-min.webp";
 import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 import CustomLink from "../../components/UI/CustomLink";
@@ -42,12 +42,6 @@ const AboutMe = () => {
         className={styles["informations__my-photo"]}
         alt="photo_of_me"
       ></img>
-
-      {/* <figcaption>
-        Jakby kogoś interesowało jak wyglądam.
-        <br />
-        Lepszego nie znalazłem.
-      </figcaption> */}
     </div>
   ) : (
     <div className={styles["informations__my-photo__wrapper--mobile"]}>

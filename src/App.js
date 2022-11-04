@@ -1,14 +1,13 @@
-import { useState } from "react";
-import Navigation from "./components/Navigation/Navigation";
-import Burger from "./components/Navigation/Burger";
+import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
+import Burger from "./components/Navigation/Burger";
+import Navigation from "./components/Navigation/Navigation";
 import AboutMePage from "./pages/AboutMe/AboutMePage";
 import PortfolioPage from "./pages/Portfolio/PortfolioPage";
 import PracticalSkillsPage from "./pages/PracticalSkills/PracticalSkillsPage";
 import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
 import ContactPage from "./pages/Contact/ContactPage";
-import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
 import NotFound from "./components/UI/NotFound";
 function App() {
   const location = useLocation();
