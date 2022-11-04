@@ -8,16 +8,11 @@ const GlobalVariablesContext = React.createContext({
 
 export const GlobalVariablesContextProvider = (props) => {
   const [hideNextPageButton, setHideNextPageButton] = useState(false);
-  const hideNextPageButtonHandler = () => {
-    setHideNextPageButton(true);
-  };
-  const showNextPageButtonHandler = () => {
-    setHideNextPageButton(false);
-  };
+
   const contextValue = {
     hideNextPageButton: hideNextPageButton,
-    hideNextPageButtonHandler: hideNextPageButtonHandler,
-    showNextPageButtonHandler: showNextPageButtonHandler,
+    hideNextPageButtonHandler: () => setHideNextPageButton(true),
+    showNextPageButtonHandler: () => setHideNextPageButton(false),
   };
   return (
     <GlobalVariablesContext.Provider value={contextValue}>
