@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Button from "../UI/Button";
 import styles from "./ContactForm.module.scss";
 import { motion } from "framer-motion";

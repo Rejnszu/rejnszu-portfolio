@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import styles from "./ProjectItem.module.scss";
 import { TfiWorld } from "react-icons/tfi";
 import { BiCodeAlt } from "react-icons/bi";
 import Button from "../../components/UI/Button";
-import { AnimatePresence, motion } from "framer-motion";
 import MoreInfoModal from "../../components/UI/MoreInfoModal";
 
 const ProjectItem = (props) => {

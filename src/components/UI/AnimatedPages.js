@@ -44,7 +44,7 @@ const AnimatedPages = (props) => {
     setTimeout(() => globalVariablesCtx.showNextPageButtonHandler(), 1);
   });
   return (
-    <motion.div
+    <motion.main
       key={props.page}
       initial={{ x: "-100%" }}
       animate={{ x: 0 }}
@@ -80,7 +80,7 @@ const AnimatedPages = (props) => {
       )}
 
       {props.children}
-    </motion.div>
+    </motion.main>
   );
 };
 
