@@ -81,6 +81,17 @@ export const webSiteProjects = [
 
 export const appProjects = [
   {
+    img: require("../../assets/apps/blindi.webp"),
+    alt: "Blindi",
+    title: "Blindi",
+    href: "https://rejnszu.github.io/Blindi/",
+    technologies: ["HTML", "SCSS", "JavaScript", "React", "Framer Motion"],
+    description:
+      "Aplikacja mająca na celu ułatwienie gry w pokera, zwłaszcza dla osób początkujących (dla osób zaawansowanych raczej nie wniesie nic nowego bo i co tu można wymyślic : P), którą tworzę dla siebie i swoich znajomych, jako, że lubimy od czasu do czasu w niego zagrać.",
+    code: "https://github.com/Rejnszu/Blindi/",
+    inProgress: true,
+  },
+  {
     img: require("../../assets/apps/musify.webp"),
     alt: "Musify",
     title: "Musify",

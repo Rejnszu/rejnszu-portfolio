@@ -8,7 +8,8 @@ import MoreInfoModal from "../../components/UI/MoreInfoModal";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
-  const { alt, img, title, href, code, technologies, description } = props;
+  const { alt, img, title, href, code, technologies, description, inProgress } =
+    props;
   return (
     <React.Fragment>
       <motion.div
@@ -16,8 +17,18 @@ const ProjectItem = (props) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className={styles.project}
+        className={`${styles.project} ${
+          inProgress ? styles["in-progress"] : ""
+        }`}
       >
+        {inProgress && (
+          <div className={styles.cone}>
+            <img
+              src={require("../../assets/others/cone.png")}
+              alt="https://www.flaticon.com/free-icons/cone"
+            />
+          </div>
+        )}
         <a
           target="_blank"
           rel="noreferrer"
@@ -41,7 +52,6 @@ const ProjectItem = (props) => {
           alt={alt}
         ></img>
         <p className={styles["project__title"]}>{title}</p>
-
         <Button onClick={() => setShowMoreInfo((prevState) => !prevState)}>
           {showMoreInfo ? "Mniej informacji" : "Więcej informacji"}
         </Button>
