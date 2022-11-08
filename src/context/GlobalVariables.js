@@ -1,12 +1,12 @@
 import { useState } from "react";
 import React from "react";
-const GlobalVariablesContext = React.createContext({
+export const GlobalVariablesContext = React.createContext({
   hideNextPageButton: false,
   hideNextPageButtonHandler: () => {},
   showNextPageButtonHandler: () => {},
 });
 
-export const GlobalVariablesContextProvider = (props) => {
+const GlobalVariablesContextProvider = (props) => {
   const [hideNextPageButton, setHideNextPageButton] = useState(false);
 
   const contextValue = {
@@ -20,4 +20,4 @@ export const GlobalVariablesContextProvider = (props) => {
     </GlobalVariablesContext.Provider>
   );
 };
-export default GlobalVariablesContext;
+export default GlobalVariablesContextProvider;

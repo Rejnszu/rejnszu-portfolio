@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import GlobalVariablesContext from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const AnimatedPages = (props) => {
   const globalVariablesCtx = useContext(GlobalVariablesContext);
