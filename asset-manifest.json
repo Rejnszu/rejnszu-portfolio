@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b45e8bce.css",
-    "main.js": "/static/js/main.a439a53e.js",
+    "main.js": "/static/js/main.ad283f07.js",
     "static/media/newtool.webp": "/static/media/newtool.b60583c3b6bbd48852e8.webp",
     "static/media/tictactoe.jpg": "/static/media/tictactoe.c011edc5832d0a01e145.jpg",
     "static/media/sprawdzauto.webp": "/static/media/sprawdzauto.71d77280c8d3f0d7874f.webp",
@@ -23,10 +23,10 @@
     "static/media/calculator.webp": "/static/media/calculator.fc9b02d0eba39f9e6ba4.webp",
     "index.html": "/index.html",
     "main.b45e8bce.css.map": "/static/css/main.b45e8bce.css.map",
-    "main.a439a53e.js.map": "/static/js/main.a439a53e.js.map"
+    "main.ad283f07.js.map": "/static/js/main.ad283f07.js.map"
   },
   "entrypoints": [
     "static/css/main.b45e8bce.css",
-    "static/js/main.a439a53e.js"
+    "static/js/main.ad283f07.js"
   ]
 }
