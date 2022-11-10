@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./SkillItem.module.scss";
 import { motion } from "framer-motion";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const SkillItem = (props) => {
   const { name, percent, index, icon, additionals } = props;
   const fillingWidth = `${percent}`;
-
+  const isMobile = useContext(GlobalVariablesContext).isMobile;
+  let delay = isMobile ? 0 : 1;
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.8, delay: delay }}
       className={styles["skills__item"]}
     >
       <div className={styles["skills__inner-wrapper"]}>
@@ -19,7 +21,7 @@ const SkillItem = (props) => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 0.6,
+            delay: delay + 0.6,
             duration: 0.5,
             y: {
               duration: 0.5,
@@ -35,7 +37,7 @@ const SkillItem = (props) => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 0.9,
+            delay: delay + 0.9,
             duration: 0.4,
             y: {
               duration: 0.5,
@@ -53,7 +55,7 @@ const SkillItem = (props) => {
           initial={{ width: 0 }}
           whileInView={{ width: fillingWidth }}
           viewport={{ once: true }}
-          transition={{ delay: 0.9, duration: 0.3, ease: "linear" }}
+          transition={{ delay: delay + 0.9, duration: 0.3, ease: "linear" }}
           className={styles["level__filling"]}
         >
           {percent}

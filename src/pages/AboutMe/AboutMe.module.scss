@@ -53,27 +53,27 @@
   &:nth-of-type(1) {
     clip-path: polygon(0 0, 0 29%, 47% 0);
     transform: translate(-60px, -25px) translateZ(50px);
-    animation: animateFirstImage 20s 2s infinite linear;
+    animation: animateFirstImage 20s 3s infinite linear;
     transform-origin: top;
   }
 
   &:nth-of-type(2) {
     clip-path: polygon(0 29%, 0 100%, 22% 100%, 89% 0, 47% 0);
     transform: translate(-70px, -35px) translateZ(-50px);
-    animation: animateSecondImage 20s 2s infinite linear;
+    animation: animateSecondImage 20s 3s infinite linear;
   }
 
   &:nth-of-type(3) {
     clip-path: polygon(100% 58%, 60% 100%, 22% 100%, 89% 0, 100% 0);
     transform: translate(-30px, -15px) translateZ(50px);
-    animation: animateThirdImage 20s 2s infinite linear;
+    animation: animateThirdImage 20s 3s infinite linear;
   }
 
   &:nth-of-type(4) {
     clip-path: polygon(100% 58%, 60% 100%, 100% 100%);
     transform: translate(-10px, 50px) translateZ(-50px);
     transform-origin: top;
-    animation: animateFourthImage 20s 2s infinite linear;
+    animation: animateFourthImage 20s 3s infinite linear;
   }
 }
 

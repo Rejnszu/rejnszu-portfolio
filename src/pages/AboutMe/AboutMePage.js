@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import styles from "./AboutMe.module.scss";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
@@ -7,18 +7,10 @@ import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 import CustomLink from "../../components/UI/CustomLink";
 
 import SmallTextElement from "../../components/UI/SmallTextElement";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const AboutMe = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
-  useEffect(() => {
-    function checkIfMobile() {
-      setIsMobile(window.innerWidth < 1200);
-    }
-    window.addEventListener("resize", checkIfMobile);
-    return () => {
-      window.removeEventListener("resize", checkIfMobile);
-    };
-  });
+  const isMobile = useContext(GlobalVariablesContext).isMobile;
 
   const photoSection = !isMobile ? (
     <div className={styles["informations__my-photo__wrapper"]}>
@@ -65,7 +57,7 @@ const AboutMe = () => {
         <div className={styles["about-me__informations"]}>
           {photoSection}
           <div className={styles["informations__description"]}>
-            <DescriptionItem title="Wprowadzenie" delay={0.5}>
+            <DescriptionItem title="Wprowadzenie" delay={1.2}>
               Witam wszystkich! Nazywam się Łukasz, a oto moja strona wizytówka,
               która ma was przekonać do zatrudnienia mnie jako waszego
               profesjonalnego, no może nie do końca profesjonalnego...ehhh po
@@ -73,7 +65,7 @@ const AboutMe = () => {
               stronie jest przykładem moich umiejętności i dedykacji dla tej
               pracy, którą cały czas staram się udoskonalać.
             </DescriptionItem>
-            <DescriptionItem title="Trochę faktów o mnie" delay={0.8}>
+            <DescriptionItem title="Trochę faktów o mnie" delay={1.5}>
               Jestem samoukiem, który próboje przebić się do świata komercyjnego
               tworzenia stron oraz aplikacji internetowych. Moja przygoda z
               programowaniem zaczęła się raczej hobbystycznie. Początkowo nie
@@ -94,7 +86,7 @@ const AboutMe = () => {
               </CustomLink>
               .
             </DescriptionItem>
-            <DescriptionItem title="Moja kariera" delay={1.1}>
+            <DescriptionItem title="Moja kariera" delay={1.8}>
               Skończyłem studia inżynierskie na kierunku energetyka, ale w
               zasadzie od początku wiedziałem, że to nie jest dla mnie. W tamtym
               okresie również nie czułem jakiegoś większego zainteresowania
@@ -107,7 +99,7 @@ const AboutMe = () => {
               zakresu fotowoltaiki. Generalnie kontakt z klientem nie jest mi
               obcy i potrafię rozmawiać z ludźmi.
             </DescriptionItem>
-            <DescriptionItem title="Moje cele" delay={1.4}>
+            <DescriptionItem title="Moje cele" delay={2.1}>
               Mam pełną świadomość, iż ciągle popełniam wiele błędów, mam braki
               w wiedzy, a także brak mi pewnych nawyków, które poprawiły by
               jakość mojego kodu, dlatego też zależy mi na tym, aby podjąć
