@@ -3,9 +3,13 @@ import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { ENGLISH_VERSION, POLISH_VERSION } from "./NavigationLanguages";
 
 const Navigation = (props) => {
-  const globalVariablesCtx = useContext(GlobalVariablesContext);
+  const { isPolish, hideNextPageButtonHandler } = useContext(
+    GlobalVariablesContext
+  );
+  const content = isPolish ? POLISH_VERSION : ENGLISH_VERSION;
   return (
     <motion.div
       key="navigation"
@@ -20,27 +24,27 @@ const Navigation = (props) => {
         className={styles.navigation}
         onClick={() => {
           props.onClick();
-          globalVariablesCtx.hideNextPageButtonHandler();
+          hideNextPageButtonHandler();
         }}
       >
         <ul className={styles.navigation__list}>
           <Link to={"/omnie"}>
-            <li style={{ "--i": 5 }}>O mnie</li>
+            <li style={{ "--i": 5 }}>{content.aboutMe}</li>
           </Link>
           <Link to={"/umiejetnoscikodowania"}>
-            <li style={{ "--i": 4 }}>Umiejętności kodowania</li>
+            <li style={{ "--i": 4 }}>{content.codingSkills}</li>
           </Link>
 
           <Link to={"/umiejetnoscipraktyczne"}>
-            <li style={{ "--i": 3 }}>Umiejętności praktyczne</li>
+            <li style={{ "--i": 3 }}>{content.practicalSkills}</li>
           </Link>
 
           <Link to={"/portfolio"}>
-            <li style={{ "--i": 2 }}>Portfolio</li>
+            <li style={{ "--i": 2 }}>{content.portfolio}</li>
           </Link>
 
           <Link to={"/kontakt"}>
-            <li style={{ "--i": 1 }}>Kontakt</li>
+            <li style={{ "--i": 1 }}>{content.contact}</li>
           </Link>
         </ul>
       </nav>

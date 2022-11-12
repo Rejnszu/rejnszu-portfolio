@@ -27,22 +27,22 @@ export const ENGLISH__VERSION = {
   firstDescription: {
     title: "Introduction",
     description:
-      "Hello everyone! My name is Łukasz, and this is my websitebusiness card that was used during my stay as Your professional, maybe ot reallyprofessional ... ehhh just a web / front-end developer.Everything you will find on this page is mine firstAnd skills and dedication to this job that I am trying all the time improve.",
+      "Hello everyone! My name is Lukas and Welcome to my portfolio site which was made to encourage You to hire me as your professional or maybe semi-professional... nah just front-end/web developer. Everything You will see here is the example of my skills and dedication to this job which I'm constantly trying to improve. ",
   },
   secondDescription: {
     title: "Some facts about me",
     description__part1:
-      "I'm a self-taught web developer who is trying to break into the world of commercial development of websites and web applications. My adventure with    programming began rather hobbyist. At first I did not    assumed that I would ever seek employment in this industry.    The very fact of creating anything that would be available on the Internet    Internet for everyone, made me feel fulfilled. Over time    however, I came to the conclusion that why not try to go one step further and try my hand at real life.    further and not test my strength in the real world. After a long    analysis of the requirements and appropriate, I think, training    I have reached the point where I can probówać combine my   hobby with a professional career. Would you like to learn more about my topic? Check out my",
+      "I'm a self-taught web developer who is trying to break into the world of commercial development of websites and web applications. My adventure with    programming began rather hobbyist. At first I did not assumed that I would ever seek employment in this industry. The very fact of creating anything that would be available on the internet for everyone, made me feel fulfilled. Over time however, I came to the conclusion that why not try to go one step further and  test my strength in the real world. After a long analysis of the requirements and appropriate, I think, training I have reached the point where I can  combine my   hobby with a professional career. Would you like to learn more about my topic? Check out my",
     description__part2: "cover letter",
   },
   thirdDescription: {
     title: "My carrer",
     description:
-      "I graduated with a degree in energy engineering, but basically    basically knew from the beginning that it wasn't for me. At the time    I also didn't feel any great interest in    computer science, maybe because I always associated it with boring    hooking up monitors and mice to computers, well, I was wrong.    wrong. Over the last seven years of my career I have been involved in    many things. Mainly sales, both on-site and    online, taking care of online stores, designing    lighting, as well as assisting in the development of large-scale projects in the    photovoltaics. In general, customer contact is not foreign to me    a stranger and I can talk to people.",
+      "I have finished my engineering studies in the field of energy, but basically I knew from the beginning that it was not for me. At that time, I also didn't feel any interest in computer science, maybe because I always associated it with boring connecting of monitors and mouses to computers, well, I was wrong. Over the last 7 years of my professional career, I have been doing different things. Mainly sales, both on-site and online, taking care of online stores, lighting projects design, as well as assistance in the development of large projects in the field of photovoltaics. Generally speaking, I am familiar with contact with clients and I can talk easily to people ; ).    ",
   },
   fourthDescription: {
     title: "My goals",
     description:
-      "I am fully aware that I still make a lot of mistakes, have gaps in    in knowledge, and I also lack certain habits that would improve the    the quality of my code, which is why I am anxious to take up    cooperation with people who have been in the industry for some time and could    direct me accordingly, and show me what is    more important in this environment.",
+      "I am fully aware that I still make many mistakes, I have gaps in knowledge, and I lack certain habits that would improve the quality of my code, which is why I want to cooperate with people who have been working in the industry for some time and could guide me and show what is most important in this environment. ",
   },
 };

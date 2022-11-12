@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalVariablesContext } from "../../../context/GlobalVariables";
 import styles from "./ChangeLanguage.module.scss";
+import { motion, AnimatePresence } from "framer-motion";
 const ChangeLanguage = (props) => {
   const { isPolish, changeLanguageToPolish, changeLanguageToEnglish } =
     useContext(GlobalVariablesContext);
@@ -13,25 +14,35 @@ const ChangeLanguage = (props) => {
       }}
       className={styles["language-wrapper"]}
     >
-      {!isPolish ? (
-        <img
-          onClick={() => {
-            setTimeout(changeLanguageToPolish, 200);
-            sessionStorage.setItem("isPolish", true);
-          }}
-          src={require("../../../assets/language/polish.png")}
-          alt="https://www.flaticon.com/free-icons/poland"
-        />
-      ) : (
-        <img
-          onClick={() => {
-            setTimeout(changeLanguageToEnglish, 200);
-            sessionStorage.setItem("isPolish", false);
-          }}
-          src={require("../../../assets/language/english.png")}
-          alt="https://www.flaticon.com/free-icons/uk-flag"
-        />
-      )}
+      <AnimatePresence mode="wait" initial={false}>
+        {!isPolish ? (
+          <motion.img
+            key="polish"
+            initial={{ x: "-50px", opacity: 1 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: "50px", opacity: 0 }}
+            onClick={() => {
+              setTimeout(changeLanguageToPolish, 100);
+              sessionStorage.setItem("isPolish", true);
+            }}
+            src={require("../../../assets/language/polish.png")}
+            alt="https://www.flaticon.com/free-icons/poland"
+          />
+        ) : (
+          <motion.img
+            key="english"
+            initial={{ x: "-50px", opacity: 1 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: "50px", opacity: 0 }}
+            onClick={() => {
+              setTimeout(changeLanguageToEnglish, 100);
+              sessionStorage.setItem("isPolish", false);
+            }}
+            src={require("../../../assets/language/english.png")}
+            alt="https://www.flaticon.com/free-icons/uk-flag"
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
