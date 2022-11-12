@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import GlobalVariablesContext from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const Navigation = (props) => {
   const globalVariablesCtx = useContext(GlobalVariablesContext);
@@ -15,7 +15,7 @@ const Navigation = (props) => {
       exit={{ zIndex: 200, position: "fixed", opacity: 0 }}
       transition={{ duration: 0.2 }}
     >
-      <div className={styles.backdrop} onClick={props.onClick}></div>
+      <div onClick={props.onClick} className={styles.backdrop}></div>
       <nav
         className={styles.navigation}
         onClick={() => {

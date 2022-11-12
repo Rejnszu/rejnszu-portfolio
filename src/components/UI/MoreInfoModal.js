@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./MoreInfoModal.module.scss";
 import { AiOutlineClose } from "react-icons/ai";
 import { TiTickOutline } from "react-icons/ti";
 import ReactDom from "react-dom";
 import { motion } from "framer-motion";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 const MoreInfoModal = (props) => {
   const closeModal = (e) => {
     e.target.getAttribute("data-close") === "true" && props.onClick();
   };
+  const { isPolish } = useContext(GlobalVariablesContext);
+
   return (
     <React.Fragment>
       {ReactDom.createPortal(
@@ -32,7 +35,7 @@ const MoreInfoModal = (props) => {
               <AiOutlineClose />
             </span>
             <p className={styles["modal__content__group-title"]}>
-              Wykorzystane technologie:
+              {isPolish ? "Wykorzystane technologie:" : "Used technologies"}
             </p>
             <ul className={styles["modal__content__technologies"]}>
               {props.technologies.map((technologie) => (
@@ -43,7 +46,7 @@ const MoreInfoModal = (props) => {
               ))}
             </ul>
             <p className={styles["modal__content__group-title"]}>
-              Krótki opis:
+              {isPolish ? "Krótki opis" : "Short Description"}
             </p>
             <p className={styles["modal__content__description"]}>
               {props.description}

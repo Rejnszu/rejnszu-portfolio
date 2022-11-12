@@ -1,16 +1,19 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import Button from "../UI/Button";
 import styles from "./ContactForm.module.scss";
 import { motion } from "framer-motion";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
   const [mailSent, setMailSent] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const isMobile = useContext(GlobalVariablesContext).isMobile;
   const formRef = useRef(null);
+
   const sendEmail = async (mailObject) => {
     const response = await fetch(`https://rejnszu.pl/index.php`, {
       method: "POST",
@@ -62,8 +65,9 @@ const ContactForm = () => {
       action="#"
       onSubmit={onFormSubmit}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 4, duration: 0.5 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: isMobile ? 1 : 4, duration: 0.5 }}
       className={styles.form}
     >
       <label
@@ -71,7 +75,7 @@ const ContactForm = () => {
         className={styles["form__label"]}
         htmlFor="name"
       >
-        Imie
+        {props.formContent.name}
       </label>
       <div className={styles["form__input-wrapper"]}>
         <input
@@ -91,7 +95,7 @@ const ContactForm = () => {
         className={styles["form__label"]}
         htmlFor="email"
       >
-        E-mail
+        {props.formContent.mail}
       </label>
       <div className={styles["form__input-wrapper"]}>
         <input
@@ -111,7 +115,7 @@ const ContactForm = () => {
         className={`${styles["form__label"]} ${styles["form__label--textarea"]}`}
         htmlFor="message"
       >
-        Wiadomość
+        {props.formContent.message}
       </label>
       <div className={styles["form__input-wrapper"]}>
         <textarea

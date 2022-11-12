@@ -8,17 +8,20 @@ import SmallTextElement from "../../components/UI/SmallTextElement";
 import SocialIcons from "../../components/Contact/SocialIcons";
 import ContactForm from "../../components/Contact/ContactForm";
 import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { ENGLISH_VERSION, POLISH_VERSION } from "./ContactLanguages";
 
 const Contact = () => {
-  const isMobile = useContext(GlobalVariablesContext).isMobile;
+  const { isMobile, isPolish } = useContext(GlobalVariablesContext);
+  const content = isPolish ? POLISH_VERSION : ENGLISH_VERSION;
+  let delay = isMobile ? 0.9 : 1.9;
   return (
     <AnimatedPages page="contact">
       <section className={`section-padding default-page`}>
-        <Heading text="Jak się można ze mną skontaktować" />
+        <Heading text={content.header} />
         <div className={styles["contact__inner-wrapper"]}>
           <div className={styles["contact__direct-message"]}>
             <SmallTextElement flexPosition="center" delay={0.7}>
-              Bezpośrednio
+              {content.firstTextElement}
             </SmallTextElement>
             <motion.p
               initial={{ opacity: 0, scale: 0 }}
@@ -26,7 +29,7 @@ const Contact = () => {
               transition={{ delay: 0.9, duration: 1 }}
               className={styles["contact__direct-message__item"]}
             >
-              Numer Telefonu: 609-660-472
+              {content.phoneText}: 609-660-472
             </motion.p>
             <motion.p
               initial={{ opacity: 0, scale: 0 }}
@@ -60,19 +63,19 @@ const Contact = () => {
           </motion.svg>
 
           <div className={styles["contact__social-media"]}>
-            <SmallTextElement flexPosition="center" delay={1.9}>
-              Przez media społecznościowe
+            <SmallTextElement flexPosition="center" delay={delay}>
+              {content.secondTextElement}
             </SmallTextElement>
             <div className={styles["social-media__icons-wrapper"]}>
-              <SocialIcons delay={2.1} icon={<BsFacebook />} />
+              <SocialIcons delay={delay} icon={<BsFacebook />} />
               <SocialIcons
-                delay={2.3}
+                delay={delay + 0.2}
                 icon={<BsLinkedin />}
                 href="https://www.linkedin.com/in/%C5%82ukasz-rejnsz/"
               />
-              <SocialIcons delay={2.7} icon={<BsTwitter />} />
+              <SocialIcons delay={delay + 0.4} icon={<BsTwitter />} />
               <SocialIcons
-                delay={3}
+                delay={delay + 0.6}
                 icon={<BsGithub />}
                 href="https://github.com/Rejnszu"
               />
@@ -80,9 +83,9 @@ const Contact = () => {
           </div>
         </div>
         <SmallTextElement flexPosition="center" delay={isMobile ? 0.5 : 3.1}>
-          Poprzez Formularz
+          {content.thirdTextElement}
         </SmallTextElement>
-        <ContactForm />
+        <ContactForm formContent={content.form} />
       </section>
     </AnimatedPages>
   );

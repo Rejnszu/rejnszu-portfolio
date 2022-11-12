@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 import SmallTextElement from "./SmallTextElement";
 
 const NotFound = () => {
+  const { isPolish } = useContext(GlobalVariablesContext);
   return (
     <div
       style={{
@@ -9,11 +11,12 @@ const NotFound = () => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        background: "var(--backgroundColor)",
         color: "white",
       }}
     >
-      <SmallTextElement delay={0.1}>Strona nie istnieje.</SmallTextElement>
+      <SmallTextElement delay={0.1}>
+        {isPolish ? "Strona nie istnieje." : "Page doesn't exist"}
+      </SmallTextElement>
     </div>
   );
 };

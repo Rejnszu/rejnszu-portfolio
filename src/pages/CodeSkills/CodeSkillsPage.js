@@ -6,17 +6,16 @@ import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import { skills } from "../../components/CodeSkills/SkillsList";
 import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { ENGLISH_VERSION, POLISH_VERSION } from "./CodeSkillsLanguage";
 const CodeSkills = () => {
-  const isMobile = useContext(GlobalVariablesContext).isMobile;
+  const { isMobile, isPolish } = useContext(GlobalVariablesContext);
+  const content = isPolish ? POLISH_VERSION : ENGLISH_VERSION;
   return (
     <AnimatedPages page="codeskills">
       <section className={"section-padding default-page"}>
-        <Heading
-          name="aboutme-heading"
-          text="Technologie z których korzystam na co dzień"
-        />
+        <Heading name="aboutme-heading" text={content.header} />
         <SmallTextElement delay={isMobile ? 0.2 : 1} flexPosition="center">
-          Wraz z przybliżonym poziomem zaawansowania
+          {content.firstTextElement}
         </SmallTextElement>
         <div className={styles["skills"]}>
           <ul className={styles["skills__list"]}>
@@ -26,7 +25,7 @@ const CodeSkills = () => {
           </ul>
         </div>
         <SmallTextElement delay={isMobile ? 0.5 : 2.5} flexPosition="center">
-          Ocena jest oczywiście subiektywna
+          {content.secondTextElement}
         </SmallTextElement>
       </section>
     </AnimatedPages>

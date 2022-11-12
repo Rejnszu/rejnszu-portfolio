@@ -5,11 +5,15 @@ export const GlobalVariablesContext = React.createContext({
   hideNextPageButtonHandler: () => {},
   showNextPageButtonHandler: () => {},
   isMobile: window.innerWidth < 1200,
+  isPolish: true,
+  changeLanguageToPolish: () => {},
+  changeLanguageToEnglish: () => {},
 });
 
 const GlobalVariablesContextProvider = (props) => {
   const [hideNextPageButton, setHideNextPageButton] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+  const [isPolish, setIsPolish] = useState(true);
   useEffect(() => {
     function checkIfMobile() {
       setIsMobile(window.innerWidth < 1200);
@@ -25,6 +29,9 @@ const GlobalVariablesContextProvider = (props) => {
     hideNextPageButtonHandler: () => setHideNextPageButton(true),
     showNextPageButtonHandler: () => setHideNextPageButton(false),
     isMobile: isMobile,
+    isPolish: isPolish,
+    changeLanguageToPolish: () => setIsPolish(true),
+    changeLanguageToEnglish: () => setIsPolish(false),
   };
   return (
     <GlobalVariablesContext.Provider value={contextValue}>

@@ -7,7 +7,7 @@ const SkillItem = (props) => {
   const { name, percent, index, icon, additionals } = props;
   const fillingWidth = `${percent}`;
   const isMobile = useContext(GlobalVariablesContext).isMobile;
-  let delay = isMobile ? 0 : 1;
+  const delay = isMobile ? 0 : 1;
   return (
     <motion.div
       initial={{ opacity: 0 }}

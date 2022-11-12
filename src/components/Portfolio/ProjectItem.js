@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./ProjectItem.module.scss";
 import { TfiWorld } from "react-icons/tfi";
 import { BiCodeAlt } from "react-icons/bi";
 import Button from "../../components/UI/Button";
 import MoreInfoModal from "../../components/UI/MoreInfoModal";
+import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
   const { alt, img, title, href, code, technologies, description, inProgress } =
     props;
+  const { isPolish } = useContext(GlobalVariablesContext);
+
   return (
     <React.Fragment>
       <motion.div
@@ -53,7 +56,13 @@ const ProjectItem = (props) => {
         ></img>
         <p className={styles["project__title"]}>{title}</p>
         <Button onClick={() => setShowMoreInfo((prevState) => !prevState)}>
-          {showMoreInfo ? "Mniej informacji" : "Więcej informacji"}
+          {isPolish
+            ? showMoreInfo
+              ? "Mniej informacji"
+              : "Więcej informacji"
+            : showMoreInfo
+            ? "Less informations"
+            : "More informations"}
         </Button>
         <AnimatePresence>
           {showMoreInfo && (
