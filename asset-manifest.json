@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b45e8bce.css",
-    "main.js": "/static/js/main.ad283f07.js",
+    "main.css": "/static/css/main.18748759.css",
+    "main.js": "/static/js/main.7615808e.js",
     "static/media/newtool.webp": "/static/media/newtool.b60583c3b6bbd48852e8.webp",
     "static/media/tictactoe.jpg": "/static/media/tictactoe.c011edc5832d0a01e145.jpg",
     "static/media/sprawdzauto.webp": "/static/media/sprawdzauto.71d77280c8d3f0d7874f.webp",
@@ -22,11 +22,11 @@
     "static/media/formularz.webp": "/static/media/formularz.f07a568bcf76a81deea9.webp",
     "static/media/calculator.webp": "/static/media/calculator.fc9b02d0eba39f9e6ba4.webp",
     "index.html": "/index.html",
-    "main.b45e8bce.css.map": "/static/css/main.b45e8bce.css.map",
-    "main.ad283f07.js.map": "/static/js/main.ad283f07.js.map"
+    "main.18748759.css.map": "/static/css/main.18748759.css.map",
+    "main.7615808e.js.map": "/static/js/main.7615808e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b45e8bce.css",
-    "static/js/main.ad283f07.js"
+    "static/css/main.18748759.css",
+    "static/js/main.7615808e.js"
   ]
 }
