@@ -16,7 +16,7 @@ const Contact = () => {
   let delay = isMobile ? 0.9 : 1.9;
   return (
     <AnimatedPages page="contact">
-      <section className={`section-padding default-page`}>
+      <main className={`section-padding default-page`}>
         <Heading text={content.header} />
         <div className={styles["contact__inner-wrapper"]}>
           <div className={styles["contact__direct-message"]}>
@@ -86,7 +86,7 @@ const Contact = () => {
           {content.thirdTextElement}
         </SmallTextElement>
         <ContactForm formContent={content.form} />
-      </section>
+      </main>
     </AnimatedPages>
   );
 };

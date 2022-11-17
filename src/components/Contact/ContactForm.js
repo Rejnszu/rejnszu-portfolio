@@ -8,9 +8,11 @@ const ContactForm = (props) => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
-  const [mailSent, setMailSent] = useState(false);
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState({
+    mailSent: false,
+    error: false,
+    loading: false,
+  });
   const isMobile = useContext(GlobalVariablesContext).isMobile;
   const formRef = useRef(null);
 
@@ -38,8 +40,10 @@ const ContactForm = (props) => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-    setMailSent(false);
-    setLoading(true);
+    setNotification((prevNotifications) => {
+      return { ...prevNotifications, mailSent: false, loading: true };
+    });
+
     const mailObject = {
       name,
       mail,
@@ -48,15 +52,17 @@ const ContactForm = (props) => {
 
     sendEmail(mailObject)
       .then((result) => {
-        setLoading(false);
-        setMailSent(true);
+        setNotification((prevNotifications) => {
+          return { ...prevNotifications, mailSent: true, loading: false };
+        });
         setName("");
         setMail("");
         setMessage("");
       })
       .catch((error) => {
-        setLoading(false);
-        setError(true);
+        setNotification((prevNotifications) => {
+          return { ...prevNotifications, error: true, loading: false };
+        });
       });
   };
   return (
@@ -130,13 +136,19 @@ const ContactForm = (props) => {
         />
       </div>
       <Button type="submit">Wyślij</Button>
-      {loading && <p className={styles["loading-mail"]}>Trwa wysyłanie.</p>}
-      {mailSent && (
-        <p className={styles["succesful-mail"]}>Mail wysłany pomyślnie.</p>
+      {notification.loading && (
+        <p className={styles["loading-mail"]}>
+          {props.formContent.notifications.loading}
+        </p>
       )}
-      {error && (
+      {notification.mailSent && (
+        <p className={styles["succesful-mail"]}>
+          {props.formContent.notifications.mailSent}
+        </p>
+      )}
+      {notification.error && (
         <p className={styles["unsuccesful-mail"]}>
-          Coś poszło nie tak, spróboj ponownie.
+          {props.formContent.notifications.error}
         </p>
       )}
     </motion.form>

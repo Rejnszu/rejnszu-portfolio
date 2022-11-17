@@ -5,6 +5,6 @@ export const POLISH_VERSION = {
 };
 export const ENGLISH_VERSION = {
   header: "Technologies I use every day",
-  firstTextElement: "Along with the pproximate level of advance",
+  firstTextElement: "Along with the aproximate level of advance",
   secondTextElement: "The rating is of course subjective",
 };

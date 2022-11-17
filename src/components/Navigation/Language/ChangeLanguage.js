@@ -23,6 +23,7 @@ const ChangeLanguage = (props) => {
             exit={{ x: "50px", opacity: 0 }}
             onClick={() => {
               setTimeout(changeLanguageToPolish, 100);
+              document.documentElement.lang = "pl";
               sessionStorage.setItem("isPolish", true);
             }}
             src={require("../../../assets/language/polish.png")}
@@ -36,6 +37,7 @@ const ChangeLanguage = (props) => {
             exit={{ x: "50px", opacity: 0 }}
             onClick={() => {
               setTimeout(changeLanguageToEnglish, 100);
+              document.documentElement.lang = "en";
               sessionStorage.setItem("isPolish", false);
             }}
             src={require("../../../assets/language/english.png")}

@@ -1,5 +1,6 @@
 export const POLISH__VERSION = {
   header: "Łukasz Rejnsz, Twój nowy Front-End Developer",
+  figcaption: "Jakby kogoś interesowało jak wyglądam. Lepszego nie znalazłem.",
   firstDescription: {
     title: "Wprowadzenie",
     description:
@@ -21,9 +22,11 @@ export const POLISH__VERSION = {
     description:
       "Mam pełną świadomość, iż ciągle popełniam wiele błędów, mam braki    w wiedzy, a także brak mi pewnych nawyków, które poprawiły by    jakość mojego kodu, dlatego też zależy mi na tym, aby podjąć    współpracę z ludźmi, którzy w branży siędzą już jakiś czas i mogli    by mnie odpowiednio nakierować, a także pokazać mi co jest    naistotniejsze w tym środowisku.",
   },
+  coverLetter: "https://rejnszu.pl/cover.pdf",
 };
 export const ENGLISH__VERSION = {
   header: "Łukasz Rejnsz, Your new Front-end developer",
+  figcaption: `If someone was intrested how I look. I couldn't find better one.`,
   firstDescription: {
     title: "Introduction",
     description:
@@ -32,7 +35,7 @@ export const ENGLISH__VERSION = {
   secondDescription: {
     title: "Some facts about me",
     description__part1:
-      "I'm a self-taught web developer who is trying to break into the world of commercial development of websites and web applications. My adventure with    programming began rather hobbyist. At first I did not assumed that I would ever seek employment in this industry. The very fact of creating anything that would be available on the internet for everyone, made me feel fulfilled. Over time however, I came to the conclusion that why not try to go one step further and  test my strength in the real world. After a long analysis of the requirements and appropriate, I think, training I have reached the point where I can  combine my   hobby with a professional career. Would you like to learn more about my topic? Check out my",
+      "I'm a self-taught web developer who is trying to break into the world of commercial development of websites and web applications. My adventure with    programming began rather hobbyist. At first I didn't assuume that I would ever seek employment in this industry. The very fact of creating anything that would be available on the internet for everyone, made me feel fulfilled. Over time however, I came to the conclusion that why not try to go one step further and  test my strength in the real world. After a long analysis of the requirements and appropriate, I think, training I have reached the point where I can  combine my   hobby with a professional career. Would you like to learn more about my topic? Check out my",
     description__part2: "cover letter",
   },
   thirdDescription: {
@@ -45,4 +48,5 @@ export const ENGLISH__VERSION = {
     description:
       "I am fully aware that I still make many mistakes, I have gaps in knowledge, and I lack certain habits that would improve the quality of my code, which is why I want to cooperate with people who have been working in the industry for some time and could guide me and show what is most important in this environment. ",
   },
+  coverLetter: "https://rejnszu.pl/cover_en.pdf",
 };

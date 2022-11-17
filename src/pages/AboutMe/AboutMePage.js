@@ -43,21 +43,13 @@ const AboutMe = () => {
         className={styles["informations__my-photo--mobile"]}
         alt="photo_of_me"
       />
-      <figcaption>
-        {isPolish
-          ? ` Jakby kogoś interesowało jak wyglądam.
-
-              Lepszego nie znalazłem.`
-          : `If someone was intrested how I look. 
-
-             I couldn't find better one.`}
-      </figcaption>
+      <figcaption>{content.figcaption}</figcaption>
     </div>
   );
 
   return (
     <AnimatedPages page="aboutme">
-      <section className={`section-padding default-page`}>
+      <main className={`section-padding default-page`}>
         <Heading text={content.header} />
         <div className={styles["about-me__informations"]}>
           {photoSection}
@@ -71,10 +63,7 @@ const AboutMe = () => {
               delay={1.5}
             >
               {content.secondDescription.description__part1}{" "}
-              <CustomLink
-                delay={isMobile ? 0.3 : 2}
-                href="https://rejnszu.pl/cover.pdf"
-              >
+              <CustomLink delay={isMobile ? 0.3 : 2} href={content.coverLetter}>
                 {content.secondDescription.description__part2}
               </CustomLink>
               .
@@ -96,7 +85,7 @@ const AboutMe = () => {
           </CustomLink>
           !
         </SmallTextElement>
-      </section>
+      </main>
     </AnimatedPages>
   );
 };

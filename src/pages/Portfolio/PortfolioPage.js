@@ -24,7 +24,7 @@ const Portfolio = () => {
 
   return (
     <AnimatedPages page="portfolio">
-      <section className={"section-padding default-page"}>
+      <main className={"section-padding default-page"}>
         <Heading text="Portfolio" />
         <SmallTextElement delay={0.2} flexPosition="center">
           {content.firstTextElement}
@@ -56,7 +56,7 @@ const Portfolio = () => {
             })}
           </div>
         )}
-      </section>
+      </main>
     </AnimatedPages>
   );
 };

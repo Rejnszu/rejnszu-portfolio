@@ -12,7 +12,7 @@ const CodeSkills = () => {
   const content = isPolish ? POLISH_VERSION : ENGLISH_VERSION;
   return (
     <AnimatedPages page="codeskills">
-      <section className={"section-padding default-page"}>
+      <main className={"section-padding default-page"}>
         <Heading name="aboutme-heading" text={content.header} />
         <SmallTextElement delay={isMobile ? 0.2 : 1} flexPosition="center">
           {content.firstTextElement}
@@ -27,7 +27,7 @@ const CodeSkills = () => {
         <SmallTextElement delay={isMobile ? 0.5 : 2.5} flexPosition="center">
           {content.secondTextElement}
         </SmallTextElement>
-      </section>
+      </main>
     </AnimatedPages>
   );
 };

@@ -14,7 +14,7 @@ const PracticalSkills = () => {
   const content = isPolish ? POLISH_VERSION : ENGLISH_VERSION;
   return (
     <AnimatedPages page="practicalskills">
-      <section className={`section-padding default-page`}>
+      <main className={`section-padding default-page`}>
         <Heading text={content.header} />
         <div className={styles["practical-skills__counter-wrapper"]}>
           <Counter
@@ -87,7 +87,7 @@ const PracticalSkills = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </main>
     </AnimatedPages>
   );
 };

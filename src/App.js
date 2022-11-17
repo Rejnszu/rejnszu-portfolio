@@ -12,6 +12,8 @@ import NotFound from "./components/UI/NotFound";
 import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
 import { GlobalVariablesContext } from "./context/GlobalVariables";
 import LanguageLoder from "./components/UI/LanguageLoder";
+import { handleLanguageOnEnter } from "./actions/LangugeHandler";
+let firstEnter = true;
 function App() {
   const location = useLocation();
   const [displayNavigation, setDisplayNavigation] = useState(false);
@@ -22,16 +24,13 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
   useEffect(() => {
-    if (
-      sessionStorage.getItem("isPolish") === "true" ||
-      sessionStorage.getItem("isPolish") === null
-    ) {
-      changeLanguageToPolish();
-    } else {
-      changeLanguageToEnglish();
+    if (firstEnter) {
+      handleLanguageOnEnter(changeLanguageToPolish, changeLanguageToEnglish);
+      firstEnter = false;
     }
-  }, []);
+  }, [changeLanguageToPolish, changeLanguageToEnglish]);
 
   return (
     <div className="page-wrapper">

@@ -8,6 +8,11 @@ export const POLISH_VERSION = {
     name: "Imie",
     mail: "E-mail",
     message: "Wiadomość",
+    notifications: {
+      mailSent: "Mail wysłany pomyślnie.",
+      loading: "Trwa wysyłanie.",
+      error: "Coś poszło nie tak, spróboj ponownie.",
+    },
   },
 };
 export const ENGLISH_VERSION = {
@@ -20,5 +25,10 @@ export const ENGLISH_VERSION = {
     name: "Name",
     mail: "E-mail",
     message: "Message",
+    notifications: {
+      mailSent: "Mail was sent successfully.",
+      loading: "Sending in progress.",
+      error: "Something went wrong, try again.",
+    },
   },
 };
