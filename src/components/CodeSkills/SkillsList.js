@@ -13,13 +13,13 @@ import {
 } from "react-icons/si";
 
 export const skills = [
-  { name: "HTML", percent: "70%", icon: <SiHtml5 /> },
+  { name: "HTML", percent: "60%", icon: <SiHtml5 /> },
   { name: "CSS", percent: "70%", icon: <SiCss3 /> },
   { name: "Sass", percent: "50%", icon: <SiSass /> },
-  { name: "BOOTSTRAP", percent: "60%", icon: <SiBootstrap /> },
+  { name: "BOOTSTRAP", percent: "50%", icon: <SiBootstrap /> },
   {
     name: "JAVASCRIPT",
-    percent: "70%",
+    percent: "60%",
     icon: <SiJavascript />,
     additionals: ["Rest Api", "AJAX"],
   },

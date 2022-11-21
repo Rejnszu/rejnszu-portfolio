@@ -9,8 +9,17 @@ import { GlobalVariablesContext } from "../../context/GlobalVariables";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
-  const { alt, img, title, href, code, technologies, description, inProgress } =
-    props;
+  const {
+    alt,
+    img,
+    title,
+    href,
+    code,
+    technologies,
+    description,
+    description_EN,
+    inProgress,
+  } = props;
   const { isPolish } = useContext(GlobalVariablesContext);
 
   return (
@@ -69,7 +78,7 @@ const ProjectItem = (props) => {
             <MoreInfoModal
               onClick={() => setShowMoreInfo((prevState) => !prevState)}
               technologies={technologies}
-              description={description}
+              description={isPolish ? description : description_EN}
               alt={alt}
             />
           )}
