@@ -55,7 +55,7 @@ export const webSiteProjects = [
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona stworzona na dla lokalnego rzeczoznawcy samochodowego. Wizualnie można by dużo poprawić, ale klient uparł się na taki design.",
-    escription_EN:
+    description_EN:
       "Website made for local car expert. Visually there is lot to improve, however client wanted this design.",
     code: "https://github.com/Rejnszu/Sprawdzauto",
   },
@@ -67,7 +67,7 @@ export const webSiteProjects = [
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona reklamowa, którą wraz ze znajomych seniorem stworzyliśmy jako ewentualna wizytówka gdyby ktoś potrzebował strony internetowej/sklepu. Obecnie nie jest aktualizowana.",
-    escription_EN:
+    description_EN:
       "Advertising website, which I made with my senior friend, as a potiental showcase if someone ordered from as a website/shop. Currently we are not updating it.",
     code: "https://github.com/Rejnszu/Rebro",
   },
@@ -79,7 +79,7 @@ export const webSiteProjects = [
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona wizytówka stworzona dla firmy, w której pracuję. Był to jeden z pierwszych projektów, które wykonałem, wiec zapewne trochę można by poprawić, aczkolwiek w okresie w którym ją tworzyłem byłem z niej bardzo zadowolony. Póki co spełnia swoją funkcję więc nie czuje potrzebny wprowadzania zmian.",
-    escription_EN:
+    description_EN:
       "Landing page, which I made for the company I'am working at. It was one of my first projects, so there are some things that could be done better, however at the time I was making it, I was very pleased with it. So far it's fulfilling it's purpose, so I don't see the need of changing it.",
     code: "https://github.com/Rejnszu/Newtool",
   },
@@ -91,7 +91,7 @@ export const webSiteProjects = [
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona stworzona dla fizjoterapeuty będąca jednocześnie moją pierwszą strona nad którą miałem okazję pracować. Wykonanie jej dało mi dużo motywacji i sporo nauczyło, mimo tego, że wcale nie jest ona niczym nadzwyczajnym.",
-    escription_EN:
+    description_EN:
       "Website made for physical therapist which was also my first website I have ever fully made. Making it gave me lots of motivation and teached a lot, even though it's nothing special.",
     code: "https://github.com/Rejnszu/Rehasquad",
   },
@@ -210,7 +210,7 @@ export const appProjects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     description:
       "Quiz na mój temat, pierwotnie stworzony dla moich znajomych, finalnie wylądował na stronie portfolio, jako ciekawy dodatek.",
-    escription_EN:
+    description_EN:
       "Quiz about me, at first it was made for my friends, however it ended up on portfolio website, as a interesting addition.",
     code: "https://github.com/Rejnszu/Quiz",
   },
