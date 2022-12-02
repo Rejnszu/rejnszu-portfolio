@@ -49,6 +49,14 @@ p {
   background-color: transparent;
   color: white;
   min-height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
+  @media only screen and (max-width: 1000px) {
+    max-width: 90%;
+  }
+  @media only screen and (max-width: 600px) {
+    max-width: 95%;
+  }
 }
 .section-padding {
   padding-top: 5rem;

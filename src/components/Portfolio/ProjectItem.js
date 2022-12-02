@@ -5,7 +5,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { BiCodeAlt } from "react-icons/bi";
 import Button from "../../components/UI/Button";
 import MoreInfoModal from "../../components/UI/MoreInfoModal";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 
 const ProjectItem = (props) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);

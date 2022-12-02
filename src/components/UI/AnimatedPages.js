@@ -3,13 +3,13 @@ import ReactDom from "react-dom";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
-
+import { GlobalVariablesContext } from "../../context/overall-context";
+import useSwipe from "../../hooks/useSwipe";
 const AnimatedPages = (props) => {
   const globalVariablesCtx = useContext(GlobalVariablesContext);
   const location = useLocation();
   const navigate = useNavigate();
-
+  const [onTouchStart, onTouchMove, onTouchEnd] = useSwipe();
   const nextPage = () => {
     globalVariablesCtx.hideNextPageButtonHandler();
     switch (location.pathname) {
@@ -40,11 +40,15 @@ const AnimatedPages = (props) => {
         break;
     }
   };
+
   useEffect(() => {
     setTimeout(() => globalVariablesCtx.showNextPageButtonHandler(), 1);
   });
   return (
     <motion.div
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
       key={props.page}
       initial={{ x: "-100%" }}
       animate={{ x: 0 }}

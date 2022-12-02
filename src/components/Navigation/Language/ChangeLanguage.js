@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalVariablesContext } from "../../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../../context/overall-context";
 import styles from "./ChangeLanguage.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 const ChangeLanguage = (props) => {

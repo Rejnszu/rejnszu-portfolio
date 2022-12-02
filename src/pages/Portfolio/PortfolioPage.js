@@ -6,7 +6,7 @@ import SmallTextElement from "../../components/UI/SmallTextElement";
 import ProjectItem from "../../components/Portfolio/ProjectItem";
 import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
 import { appProjects } from "../../components/Portfolio/ProjectsList";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./PortfolioLanguages";
 
 const Portfolio = () => {

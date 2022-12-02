@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./SkillItem.module.scss";
 import { motion } from "framer-motion";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 
 const SkillItem = (props) => {
   const { name, percent, index, icon, additionals } = props;

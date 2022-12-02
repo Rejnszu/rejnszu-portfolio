@@ -5,7 +5,7 @@ import SkillItem from "../../components/CodeSkills/SkillItem";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import { skills } from "../../components/CodeSkills/SkillsList";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./CodeSkillsLanguage";
 const CodeSkills = () => {
   const { isMobile, isPolish } = useContext(GlobalVariablesContext);

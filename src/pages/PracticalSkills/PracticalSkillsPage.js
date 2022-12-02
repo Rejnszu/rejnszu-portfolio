@@ -7,7 +7,7 @@ import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import { practicalSkills } from "../../components/PracticalSkills/PracticalSkillsList";
 import PracticalSkillItem from "../../components/PracticalSkills/PracticalSkillItem";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./PracticalSkillsLanguage";
 const PracticalSkills = () => {
   const { isMobile, isPolish } = useContext(GlobalVariablesContext);
@@ -27,14 +27,14 @@ const PracticalSkills = () => {
           <Counter
             estimated={true}
             title={content.counters.secondCounter}
-            number={350}
+            number={800}
             duration={2000}
             delay={1500}
           />
           <Counter
             estimated={true}
             title={content.counters.thirdCounter}
-            number={600}
+            number={1000}
             duration={2000}
             delay={2000}
           />

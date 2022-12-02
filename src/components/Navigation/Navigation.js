@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./NavigationLanguages";
 
 const Navigation = (props) => {

@@ -7,7 +7,7 @@ import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 import CustomLink from "../../components/UI/CustomLink";
 
 import SmallTextElement from "../../components/UI/SmallTextElement";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 
 import { POLISH__VERSION, ENGLISH__VERSION } from "./AboutMeLanguages";
 const AboutMe = () => {
@@ -60,7 +60,7 @@ const AboutMe = () => {
             </DescriptionItem>
             <DescriptionItem
               title={content.secondDescription.title}
-              delay={1.5}
+              delay={1.7}
             >
               {content.secondDescription.description__part1}{" "}
               <CustomLink delay={isMobile ? 0.3 : 2} href={content.coverLetter}>
@@ -68,15 +68,15 @@ const AboutMe = () => {
               </CustomLink>
               .
             </DescriptionItem>
-            <DescriptionItem title={content.thirdDescription.title} delay={1.8}>
+            <DescriptionItem title={content.thirdDescription.title} delay={2.1}>
               {content.thirdDescription.description}
             </DescriptionItem>
-            <DescriptionItem title={content.firstDescription.title} delay={2.1}>
+            <DescriptionItem title={content.firstDescription.title} delay={2.7}>
               {content.fourthDescription.description}
             </DescriptionItem>
           </div>
         </div>
-        <SmallTextElement flexPosition="center">
+        <SmallTextElement delay={0} flexPosition="center">
           {isPolish
             ? "Wciąż za mało informacji? Sprawdź się moim"
             : "Still not enough information? Check yourself with my"}{" "}

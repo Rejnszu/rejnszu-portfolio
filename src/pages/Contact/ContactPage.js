@@ -7,7 +7,7 @@ import { BsFacebook, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import SocialIcons from "../../components/Contact/SocialIcons";
 import ContactForm from "../../components/Contact/ContactForm";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./ContactLanguages";
 
 const Contact = () => {

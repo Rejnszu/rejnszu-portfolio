@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 import Button from "../UI/Button";
 import styles from "./ContactForm.module.scss";
 import { motion } from "framer-motion";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 
 const ContactForm = (props) => {
   const [name, setName] = useState("");

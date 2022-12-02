@@ -10,9 +10,9 @@ import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import NotFound from "./components/UI/NotFound";
 import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
-import { GlobalVariablesContext } from "./context/GlobalVariables";
+import { GlobalVariablesContext } from "./context/overall-context";
 import LanguageLoder from "./components/UI/LanguageLoder";
-import { handleLanguageOnEnter } from "./actions/LangugeHandler";
+import { handleLanguageOnEnter } from "./actions/langugeHandler";
 let firstEnter = true;
 function App() {
   const location = useLocation();

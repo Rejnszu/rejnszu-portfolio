@@ -11,7 +11,7 @@ export const practicalSkills = {
     "Dobre praktyki SEO",
     "Optymalizacje wydajności",
     "Dbałość o design",
-    "Łączenie aplikacji/stron z zewnętrznymi serwisami(api)",
+    "Łączenie aplikacji/stron z zewnętrznymi serwisami (api)",
   ],
   general__English: [
     "Landing page",
@@ -25,6 +25,6 @@ export const practicalSkills = {
     "Good SEO practices",
     "Performance optimalization",
     "Attention to design",
-    "Connecting apps/websites to external services(api)",
+    "Connecting apps/websites to external services (api)",
   ],
 };

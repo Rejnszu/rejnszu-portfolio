@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { TiTickOutline } from "react-icons/ti";
 import ReactDom from "react-dom";
 import { motion } from "framer-motion";
-import { GlobalVariablesContext } from "../../context/GlobalVariables";
+import { GlobalVariablesContext } from "../../context/overall-context";
 const MoreInfoModal = (props) => {
   const closeModal = (e) => {
     e.target.getAttribute("data-close") === "true" && props.onClick();
