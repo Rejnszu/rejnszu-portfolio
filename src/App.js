@@ -9,6 +9,7 @@ import PracticalSkillsPage from "./pages/PracticalSkills/PracticalSkillsPage";
 import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import NotFound from "./components/UI/NotFound";
+import ProjectDetails from "./components/Portfolio/ProjectDetails/ProjectDetails";
 import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
 import { GlobalVariablesContext } from "./context/overall-context";
 import LanguageLoder from "./components/UI/LanguageLoder";
@@ -71,6 +72,9 @@ function App() {
             element={<PracticalSkillsPage />}
           />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio/:projectName" element={<ProjectDetails />}>
+            <Route path="*" element={<NotFound />} />
+          </Route>
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

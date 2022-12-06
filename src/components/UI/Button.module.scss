@@ -15,4 +15,8 @@
     transform: scale(1.1);
     box-shadow: 0 0 2px var(--helper-color-2--brighter), 0 0 15px black;
   }
+  a {
+    text-decoration: none;
+    color: var(--helper-color-1);
+  }
 }

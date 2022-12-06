@@ -1,0 +1,47 @@
+.project__informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.project__description {
+  flex: 0 0 40%;
+}
+.informations__title {
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: "Oxygen Mono", monospace;
+  align-self: flex-start;
+}
+.description__content {
+  font-size: clamp(0.6rem, 3vw, 1.1rem);
+
+  color: white;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.project__technologies {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies__list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 250px));
+  color: white;
+  gap: 20px;
+  margin: 0;
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, minmax(0, 200px));
+  }
+}

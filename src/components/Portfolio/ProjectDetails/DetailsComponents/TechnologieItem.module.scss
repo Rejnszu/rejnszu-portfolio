@@ -1,0 +1,23 @@
+.technologie-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.1rem;
+  gap: 5px;
+
+  border: 2px solid var(--helper-color-2);
+  padding: 0.4rem 0.3rem;
+  isolation: isolate;
+  background-color: transparent;
+  z-index: 1;
+
+  color: var(--helper-color-1);
+  font-size: clamp(0.7rem, 4vw, 1.2rem);
+  box-shadow: 0 0 2px var(--helper-color-2--brighter);
+
+  svg {
+    fill: var(--helper-color-2--brighter);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+  }
+}

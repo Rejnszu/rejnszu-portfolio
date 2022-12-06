@@ -1,16 +1,15 @@
-import React, { useState, useContext } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import styles from "./ProjectItem.module.scss";
 import { TfiWorld } from "react-icons/tfi";
 import { BiCodeAlt } from "react-icons/bi";
 import Button from "../../components/UI/Button";
-import MoreInfoModal from "../../components/UI/MoreInfoModal";
+
 import { GlobalVariablesContext } from "../../context/overall-context";
+import { Link } from "react-router-dom";
 
 const ProjectItem = (props) => {
-  const [showMoreInfo, setShowMoreInfo] = useState(false);
   const {
-    alt,
     img,
     title,
     href,
@@ -19,6 +18,7 @@ const ProjectItem = (props) => {
     description,
     description_EN,
     inProgress,
+    route,
   } = props;
   const { isPolish } = useContext(GlobalVariablesContext);
 
@@ -60,29 +60,15 @@ const ProjectItem = (props) => {
         <img
           loading="lazy"
           className={styles["project__image"]}
-          src={img}
-          alt={alt}
+          src={img[0]}
+          alt={title}
         ></img>
         <p className={styles["project__title"]}>{title}</p>
-        <Button onClick={() => setShowMoreInfo((prevState) => !prevState)}>
-          {isPolish
-            ? showMoreInfo
-              ? "Mniej informacji"
-              : "Więcej informacji"
-            : showMoreInfo
-            ? "Less informations"
-            : "More informations"}
-        </Button>
-        <AnimatePresence>
-          {showMoreInfo && (
-            <MoreInfoModal
-              onClick={() => setShowMoreInfo((prevState) => !prevState)}
-              technologies={technologies}
-              description={isPolish ? description : description_EN}
-              alt={alt}
-            />
-          )}
-        </AnimatePresence>
+        <Link className={styles["project__link"]} to={route}>
+          <Button>
+            {isPolish ? "Więcej informacji" : "More informations"}
+          </Button>
+        </Link>
       </motion.div>
     </React.Fragment>
   );

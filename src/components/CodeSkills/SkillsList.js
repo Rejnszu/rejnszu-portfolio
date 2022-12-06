@@ -31,12 +31,12 @@ export const skills = [
   },
   {
     name: "REDUX",
-    percent: "70%",
+    percent: "60%",
     icon: <SiRedux />,
-    additionals: ["Redux Toolkit"],
+    additionals: ["Redux Toolkit", "RTK Query"],
   },
   { name: "TYPESCRIPT", percent: "20%", icon: <SiTypescript /> },
   { name: "WORDPRESS", percent: "30%", icon: <SiWordpress /> },
-  { name: "PHP", percent: "20%", icon: <SiPhp /> },
+  { name: "PHP", percent: "15%", icon: <SiPhp /> },
   { name: "GIT", percent: "60%", icon: <SiGit /> },
 ];

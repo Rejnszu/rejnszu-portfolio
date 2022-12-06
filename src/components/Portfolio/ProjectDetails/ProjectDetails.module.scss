@@ -1,0 +1,17 @@
+.button--go-back {
+  position: fixed;
+  top: 80px;
+  right: 7px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 200;
+  @media (max-width: 1000px) {
+    height: 30px;
+    width: 30px;
+    right: 11px;
+  }
+}

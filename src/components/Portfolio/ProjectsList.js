@@ -1,10 +1,10 @@
 export const webSiteProjects = [
   {
-    img: require("../../assets/websites/formularz.webp"),
-    alt: "formularz szkolny",
+    img: [require("../../assets/websites/formularz.webp")],
     title: "Kursy szkolne",
     href: "https://www.ambitni.edu.pl/konfigurator/",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    route: "kursy",
+    technologies: ["HTML", "SCSS", "JavaScript", "Wordpress"],
     description:
       "Mały moduł w stylu SPA, podpięty pod gotową już stronę, mający ułatwić kursantom odpowiedni wybór kursów.",
     description_EN:
@@ -12,11 +12,11 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/school-form",
   },
   {
-    img: require("../../assets/websites/biker.webp"),
-    alt: "Biker",
+    img: [require("../../assets/websites/biker.webp")],
     title: "Biker",
     href: "https://rejnszu.github.io/Bike-Shop-Site/",
-    technologies: ["HTML", "CSS", "JavaScript", "Sass"],
+    route: "biker",
+    technologies: ["HTML", "SCSS", "JavaScript", "Sass"],
     description:
       "Przykładowa strona dla sklepu rowerowego z paroma funkcjonalnościami. Projekt prywatny, czysto treningowy.",
     description_EN:
@@ -24,10 +24,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Bike-Shop-Site",
   },
   {
-    img: require("../../assets/websites/domsi.webp"),
-    alt: "Domsi",
+    img: [require("../../assets/websites/domsi.webp")],
     title: "Domsi",
     href: "https://esklep.newtool.pl/",
+    route: "domsi",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona dla lokalnego dewelopera. Póki co nie aktywna, gdyż domy jeszcze nie powstają.",
@@ -36,10 +36,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Domsi",
   },
   {
-    img: require("../../assets/websites/portfolio.webp"),
-    alt: "Stare Portfolio",
+    img: [require("../../assets/websites/portfolio.webp")],
     title: "Stare Portfolio",
     href: "https://rejnszu.github.io/Portfolio/",
+    route: "stare-portfolio",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Moja pierwsza wersja strony portfolio, zastąpiona przez obecną gdyż mimo, iż wizualnie nie uważam jej za złą, jakość kodu juz tak dobrze nie wypada.",
@@ -48,10 +48,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Portfolio",
   },
   {
-    img: require("../../assets/websites/sprawdzauto.webp"),
-    alt: "Sprawdzauto",
+    img: [require("../../assets/websites/sprawdzauto.webp")],
     title: "Sprawdzauto",
     href: "https://www.sprawdzauto.com.pl/",
+    route: "sprawdzauto",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona stworzona na dla lokalnego rzeczoznawcy samochodowego. Wizualnie można by dużo poprawić, ale klient uparł się na taki design.",
@@ -60,10 +60,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Sprawdzauto",
   },
   {
-    img: require("../../assets/websites/rebro.webp"),
-    alt: "Rebro",
+    img: [require("../../assets/websites/rebro.webp")],
     title: "Rebro",
     href: "https://rebro.pl/",
+    route: "rebro",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona reklamowa, którą wraz ze znajomych seniorem stworzyliśmy jako ewentualna wizytówka gdyby ktoś potrzebował strony internetowej/sklepu. Obecnie nie jest aktualizowana.",
@@ -72,10 +72,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Rebro",
   },
   {
-    img: require("../../assets/websites/newtool.webp"),
-    alt: "Newtool",
+    img: [require("../../assets/websites/newtool.webp")],
     title: "Newtool",
     href: "https://newtool.pl/",
+    route: "newtool",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona wizytówka stworzona dla firmy, w której pracuję. Był to jeden z pierwszych projektów, które wykonałem, wiec zapewne trochę można by poprawić, aczkolwiek w okresie w którym ją tworzyłem byłem z niej bardzo zadowolony. Póki co spełnia swoją funkcję więc nie czuje potrzebny wprowadzania zmian.",
@@ -84,10 +84,10 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Newtool",
   },
   {
-    img: require("../../assets/websites/rehasquad.webp"),
-    alt: "Rehasquad",
+    img: [require("../../assets/websites/rehasquad.webp")],
     title: "Rehasquad",
     href: "https://rehasquad.pl/",
+    route: "rehasquad",
     technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
     description:
       "Strona stworzona dla fizjoterapeuty będąca jednocześnie moją pierwszą strona nad którą miałem okazję pracować. Wykonanie jej dało mi dużo motywacji i sporo nauczyło, mimo tego, że wcale nie jest ona niczym nadzwyczajnym.",
@@ -99,11 +99,23 @@ export const webSiteProjects = [
 
 export const appProjects = [
   {
-    img: require("../../assets/apps/blindi.webp"),
-    alt: "Blindi",
+    img: [
+      require("../../assets/apps/blindi/blindi.webp"),
+      require("../../assets/apps/blindi/blindi1.webp"),
+      require("../../assets/apps/blindi/blindi2.webp"),
+      require("../../assets/apps/blindi/blindi3.webp"),
+    ],
     title: "Blindi",
     href: "https://rejnszu.github.io/Blindi/",
-    technologies: ["HTML", "SCSS", "JavaScript", "React", "Framer Motion"],
+    route: "blindi",
+    technologies: [
+      "HTML",
+      "SCSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Framer Motion",
+    ],
     description:
       "Aplikacja mająca na celu ułatwienie gry w pokera, zwłaszcza dla osób początkujących (dla osób zaawansowanych raczej nie wniesie nic nowego bo i co tu można wymyślic : P), którą tworzę dla siebie i swoich znajomych, jako że lubimy od czasu do czasu w niego zagrać.",
     description_EN:
@@ -111,9 +123,16 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Blindi/",
   },
   {
-    img: require("../../assets/apps/musify.webp"),
-    alt: "Musify",
+    img: [
+      require("../../assets/apps/musify/musify.webp"),
+      require("../../assets/apps/musify/musify1.webp"),
+      require("../../assets/apps/musify/musify2.webp"),
+      require("../../assets/apps/musify/musify3.webp"),
+      require("../../assets/apps/musify/musify4.webp"),
+      require("../../assets/apps/musify/musify5.webp"),
+    ],
     title: "Musify",
+    route: "musify",
     href: "https://rejnszu.github.io/Musify/",
     technologies: [
       "HTML",
@@ -123,6 +142,7 @@ export const appProjects = [
       "Rest API",
       "Redux Toolkit",
       "React Router",
+      "RTK Query",
       "Framer Motion",
       "Firebase",
     ],
@@ -133,9 +153,13 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Musify",
   },
   {
-    img: require("../../assets/apps/tanks.webp"),
-    alt: "Tanks",
+    img: [
+      require("../../assets/apps//tanks/tanks.webp"),
+      require("../../assets/apps//tanks/tanks1.webp"),
+      require("../../assets/apps//tanks/tanks2.webp"),
+    ],
     title: "Tanks",
+    route: "tanks",
     href: "https://rejnszu.github.io/Tanks-game/",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Redux Toolkit"],
     description:
@@ -145,10 +169,10 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Tanks-game",
   },
   {
-    img: require("../../assets/apps/tictactoe.jpg"),
-    alt: "Tic Tac Toe",
+    img: [require("../../assets/apps/tictactoe.jpg")],
     title: "Tic Tac Toe",
     href: "https://rejnszu.github.io/Tic-Tac-Toe-AI/",
+    route: "tic-tac-toe",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "Czym było by portfolio bez gry w kółko i krzyżyk. Zasad chyba nikomu nie trzeba tłumaczyć. Gra ma dwie wersje, jedna do grania z prawdziwym przeciwnikiem, druga do grania z komputerem i to ta wersja jest podlinkowana. Komputer o dziwo daje rade, aczkolwiek jak wiadomo liczba wygranych kombinacji nie jest zbyt wielka wiec łatwo go ograć.",
@@ -157,10 +181,10 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Tic-Tac-Toe-AI",
   },
   {
-    img: require("../../assets/apps/crypto.webp"),
-    alt: "CryptoCompare",
+    img: [require("../../assets/apps/crypto.webp")],
     title: "Crypto Compare",
     href: "https://rejnszu.github.io/React-Crypto-MarketCap-Compare/",
+    route: "crypto-compare",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "Aplikacja dla marzycieli, którzy lubia sprawdzać co by było gdyby. Była to pierwsza rzecz jaką stworzyłem w reactcie, gdy już czułem, że moja wiedza pozwala mi na stworzenie czegokolwiek.",
@@ -169,20 +193,20 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/React-Crypto-MarketCap-Compare",
   },
   {
-    img: require("../../assets/apps/calculator.webp"),
-    alt: "Calculator",
+    img: [require("../../assets/apps/calculator.webp")],
     title: "Calculator",
     href: "https://rejnszu.github.io/React-Calculator/",
+    route: "calculator",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     description: "Prosty kalkulator.",
     description_EN: "Simple calculator.",
     code: "https://github.com/Rejnszu/React-Calculator",
   },
   {
-    img: require("../../assets/apps/fithits.webp"),
-    alt: "FitHits",
+    img: [require("../../assets/apps/fithits.webp")],
     title: "FitHits",
     href: "https://rejnszu.github.io/FitHits/",
+    route: "fithits",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "Aplikacja, która w oparciu o podane informacje oblicza dzienne zapotrzebowanie kaloryczne. Możliwe dodawanie posiłkow wraz z liczba spożytych kalorii oraz ćwiczeń wraz z liczba spalonych kalorii.",
@@ -191,10 +215,10 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/FitHits",
   },
   {
-    img: require("../../assets/apps/currency.webp"),
-    alt: "Currency Exchange",
+    img: [require("../../assets/apps/currency.webp")],
     title: "Currency Exchange",
     href: "https://rejnszu.github.io/Currency-exchange/",
+    route: "currency-exchange",
     technologies: ["HTML", "CSS", "JavaScript"],
     description:
       "Aplikacja do przeliczania walut. W sumie zamysł był taki żeby poćwiczyć REST API i nie miała nigdy ujrzeć światła dziennego, dlatego też graficznie nie jest to majsterszyk.",
@@ -203,10 +227,10 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Currency-exchange",
   },
   {
-    img: require("../../assets/apps/quiz.webp"),
-    alt: "Quiz",
+    img: [require("../../assets/apps/quiz.webp")],
     title: "Quiz",
-    href: "https://rejnszu.pl/quiz/",
+    href: "https://rejnszu.github.io/Quiz/",
+    route: "quiz",
     technologies: ["HTML", "CSS", "JavaScript"],
     description:
       "Quiz na mój temat, pierwotnie stworzony dla moich znajomych, finalnie wylądował na stronie portfolio, jako ciekawy dodatek.",

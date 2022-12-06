@@ -4,6 +4,7 @@ import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import ProjectItem from "../../components/Portfolio/ProjectItem";
+
 import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
 import { appProjects } from "../../components/Portfolio/ProjectsList";
 import { GlobalVariablesContext } from "../../context/overall-context";
@@ -45,14 +46,14 @@ const Portfolio = () => {
         {displayedProjects === "websites" && (
           <div className={styles["projects__wrapper"]}>
             {webSiteProjects.map((project) => {
-              return <ProjectItem {...project} key={project.alt} />;
+              return <ProjectItem {...project} key={project.title} />;
             })}
           </div>
         )}
         {displayedProjects === "apps" && (
           <div className={styles["projects__wrapper"]}>
             {appProjects.map((project) => {
-              return <ProjectItem {...project} key={project.alt} />;
+              return <ProjectItem {...project} key={project.title} />;
             })}
           </div>
         )}

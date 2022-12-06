@@ -56,9 +56,6 @@ const AnimatedPages = (props) => {
       transition={{
         ease: "linear",
         duration: 0.5,
-        opacity: {
-          duration: 0.3,
-        },
       }}
       style={{
         position: "absolute",
