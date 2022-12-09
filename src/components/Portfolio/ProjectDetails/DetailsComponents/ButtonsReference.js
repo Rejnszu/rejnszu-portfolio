@@ -10,7 +10,7 @@ const ButtonsReference = (props) => {
           {isPolish ? "Sprawdz wersje live" : "Check live version"}
         </Button>
       </a>
-      <a href={code} target="blank">
+      <a href={code} target="_blank" rel="noopener noreferrer">
         <Button>{isPolish ? "Sprawdz kod" : "Check the code"}</Button>{" "}
       </a>
     </div>

@@ -10,6 +10,8 @@ import {
   SiPhp,
   SiGit,
   SiTypescript,
+  SiWebpack,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export const skills = [
@@ -29,6 +31,7 @@ export const skills = [
     icon: <SiReact />,
     additionals: ["React Router", "Framer Motion", "Redux"],
   },
+  { name: "NEXT JS", percent: "20%", icon: <SiNextdotjs /> },
   {
     name: "REDUX",
     percent: "60%",
@@ -36,6 +39,7 @@ export const skills = [
     additionals: ["Redux Toolkit", "RTK Query"],
   },
   { name: "TYPESCRIPT", percent: "20%", icon: <SiTypescript /> },
+  { name: "WEBPACK", percent: "30%", icon: <SiWebpack /> },
   { name: "WORDPRESS", percent: "30%", icon: <SiWordpress /> },
   { name: "PHP", percent: "15%", icon: <SiPhp /> },
   { name: "GIT", percent: "60%", icon: <SiGit /> },

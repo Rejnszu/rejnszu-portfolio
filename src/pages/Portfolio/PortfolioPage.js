@@ -9,6 +9,7 @@ import { webSiteProjects } from "../../components/Portfolio/ProjectsList";
 import { appProjects } from "../../components/Portfolio/ProjectsList";
 import { GlobalVariablesContext } from "../../context/overall-context";
 import { ENGLISH_VERSION, POLISH_VERSION } from "./PortfolioLanguages";
+import { AnimatePresence } from "framer-motion";
 
 const Portfolio = () => {
   const selectRef = useRef(null);
@@ -42,21 +43,22 @@ const Portfolio = () => {
             {content.select.second}
           </p>
         </div>
-
-        {displayedProjects === "websites" && (
-          <div className={styles["projects__wrapper"]}>
-            {webSiteProjects.map((project) => {
-              return <ProjectItem {...project} key={project.title} />;
-            })}
-          </div>
-        )}
-        {displayedProjects === "apps" && (
-          <div className={styles["projects__wrapper"]}>
-            {appProjects.map((project) => {
-              return <ProjectItem {...project} key={project.title} />;
-            })}
-          </div>
-        )}
+        <AnimatePresence>
+          {displayedProjects === "websites" && (
+            <div className={styles["projects__wrapper"]}>
+              {webSiteProjects.map((project) => {
+                return <ProjectItem {...project} key={project.title} />;
+              })}
+            </div>
+          )}
+          {displayedProjects === "apps" && (
+            <div className={styles["projects__wrapper"]}>
+              {appProjects.map((project) => {
+                return <ProjectItem {...project} key={project.title} />;
+              })}
+            </div>
+          )}
+        </AnimatePresence>
       </main>
     </AnimatedPages>
   );

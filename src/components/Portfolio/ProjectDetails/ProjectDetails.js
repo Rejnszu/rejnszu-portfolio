@@ -30,9 +30,9 @@ const ProjectDetails = () => {
   return (
     <motion.div
       key={href}
-      initial={{ y: "-100%" }}
-      animate={{ y: 0 }}
-      exit={{ y: "100%" }}
+      initial={{ y: "-100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: "100%", opacity: 0 }}
       transition={{
         ease: "linear",
         duration: 0.5,

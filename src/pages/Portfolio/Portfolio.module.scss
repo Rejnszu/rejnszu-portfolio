@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 100px;
   margin: auto;
+  overflow: hidden;
 }
 .portfolio__select {
   display: flex;

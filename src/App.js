@@ -13,7 +13,7 @@ import ProjectDetails from "./components/Portfolio/ProjectDetails/ProjectDetails
 import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
 import { GlobalVariablesContext } from "./context/overall-context";
 import LanguageLoder from "./components/UI/LanguageLoder";
-import { handleLanguageOnEnter } from "./actions/langugeHandler";
+import { handleLanguageOnEnter } from "./helperFunctions/langugeHandler";
 let firstEnter = true;
 function App() {
   const location = useLocation();

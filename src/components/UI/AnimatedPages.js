@@ -50,12 +50,12 @@ const AnimatedPages = (props) => {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
       key={props.page}
-      initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "100%" }}
+      initial={{ x: "-100%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: "100%", opacity: 0 }}
       transition={{
         ease: "linear",
-        duration: 0.5,
+        duration: 0.6,
       }}
       style={{
         position: "absolute",

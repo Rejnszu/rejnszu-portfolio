@@ -6,7 +6,8 @@
   background-color: var(--main-color);
   border-radius: 15px;
   background: rgb(0, 0, 0);
-
+  transform: translateY(100px);
+  opacity: 0;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
@@ -56,6 +57,19 @@
   }
   a {
     margin: auto;
+  }
+  &.animate {
+    animation: moveIn 0.5s linear forwards;
+  }
+}
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .project__reference {

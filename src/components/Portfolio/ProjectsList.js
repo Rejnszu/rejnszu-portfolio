@@ -1,6 +1,12 @@
 export const webSiteProjects = [
   {
-    img: [require("../../assets/websites/formularz.webp")],
+    img: [
+      require("../../assets/websites/courses/courses.webp"),
+      require("../../assets/websites/courses/courses1.webp"),
+      require("../../assets/websites/courses/courses2.webp"),
+      require("../../assets/websites/courses/courses3.webp"),
+      require("../../assets/websites/courses/courses4.webp"),
+    ],
     title: "Kursy szkolne",
     href: "https://www.ambitni.edu.pl/konfigurator/",
     route: "kursy",
@@ -10,6 +16,43 @@ export const webSiteProjects = [
     description_EN:
       "Small module imitating SPA, connected to the already standing page. Made for making it easier for students to choose proper courses.",
     code: "https://github.com/Rejnszu/school-form",
+  },
+  {
+    img: [
+      require("../../assets/websites/domsi/domsi.webp"),
+      require("../../assets/websites/domsi/domsi1.webp"),
+      require("../../assets/websites/domsi/domsi2.webp"),
+      require("../../assets/websites/domsi/domsi3.webp"),
+      require("../../assets/websites/domsi/domsi4.webp"),
+      require("../../assets/websites/domsi/domsi5.webp"),
+    ],
+    title: "Domsi",
+    href: "https://esklep.newtool.pl/",
+    route: "domsi",
+    technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
+    description:
+      "Strona dla lokalnego dewelopera. Póki co nie aktywna, gdyż domy jeszcze nie powstają.",
+    description_EN:
+      "Website for local house developer. Not active at the moment, because they didn't start to build yet.",
+    code: "https://github.com/Rejnszu/Domsi",
+  },
+  {
+    img: [
+      require("../../assets/websites/sprawdzauto/sprawdzauto.webp"),
+      require("../../assets/websites/sprawdzauto/sprawdzauto1.webp"),
+      require("../../assets/websites/sprawdzauto/sprawdzauto2.webp"),
+      require("../../assets/websites/sprawdzauto/sprawdzauto3.webp"),
+      require("../../assets/websites/sprawdzauto/sprawdzauto4.webp"),
+    ],
+    title: "Sprawdzauto",
+    href: "https://www.sprawdzauto.com.pl/",
+    route: "sprawdzauto",
+    technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
+    description:
+      "Strona stworzona na dla lokalnego rzeczoznawcy samochodowego. Wizualnie można by dużo poprawić, ale klient uparł się na taki design.",
+    description_EN:
+      "Website made for local car expert. Visually there is lot to improve, however client wanted this design.",
+    code: "https://github.com/Rejnszu/Sprawdzauto",
   },
   {
     img: [require("../../assets/websites/biker.webp")],
@@ -23,18 +66,7 @@ export const webSiteProjects = [
       "Sample web page for bike shop with some functionalities. Private, practice project.",
     code: "https://github.com/Rejnszu/Bike-Shop-Site",
   },
-  {
-    img: [require("../../assets/websites/domsi.webp")],
-    title: "Domsi",
-    href: "https://esklep.newtool.pl/",
-    route: "domsi",
-    technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
-    description:
-      "Strona dla lokalnego dewelopera. Póki co nie aktywna, gdyż domy jeszcze nie powstają.",
-    description_EN:
-      "Website for local house developer. Not active at the moment, because they didn't start to build yet.",
-    code: "https://github.com/Rejnszu/Domsi",
-  },
+
   {
     img: [require("../../assets/websites/portfolio.webp")],
     title: "Stare Portfolio",
@@ -47,20 +79,16 @@ export const webSiteProjects = [
       "My first version of portfolio website, replaced by this one. Even though visually it wasn't bad, in terms of code it didn't look as good.",
     code: "https://github.com/Rejnszu/Portfolio",
   },
+
   {
-    img: [require("../../assets/websites/sprawdzauto.webp")],
-    title: "Sprawdzauto",
-    href: "https://www.sprawdzauto.com.pl/",
-    route: "sprawdzauto",
-    technologies: ["HTML", "CSS", "JavaScript", "Wordpress"],
-    description:
-      "Strona stworzona na dla lokalnego rzeczoznawcy samochodowego. Wizualnie można by dużo poprawić, ale klient uparł się na taki design.",
-    description_EN:
-      "Website made for local car expert. Visually there is lot to improve, however client wanted this design.",
-    code: "https://github.com/Rejnszu/Sprawdzauto",
-  },
-  {
-    img: [require("../../assets/websites/rebro.webp")],
+    img: [
+      require("../../assets/websites/rebro/rebro.webp"),
+      require("../../assets/websites/rebro/rebro1.webp"),
+      require("../../assets/websites/rebro/rebro2.webp"),
+      require("../../assets/websites/rebro/rebro3.webp"),
+      require("../../assets/websites/rebro/rebro4.webp"),
+      require("../../assets/websites/rebro/rebro5.webp"),
+    ],
     title: "Rebro",
     href: "https://rebro.pl/",
     route: "rebro",
@@ -72,7 +100,14 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Rebro",
   },
   {
-    img: [require("../../assets/websites/newtool.webp")],
+    img: [
+      require("../../assets/websites/newtool/newtool.webp"),
+      require("../../assets/websites/newtool/newtool1.webp"),
+      require("../../assets/websites/newtool/newtool2.webp"),
+      require("../../assets/websites/newtool/newtool3.webp"),
+      require("../../assets/websites/newtool/newtool4.webp"),
+      require("../../assets/websites/newtool/newtool5.webp"),
+    ],
     title: "Newtool",
     href: "https://newtool.pl/",
     route: "newtool",
@@ -84,7 +119,14 @@ export const webSiteProjects = [
     code: "https://github.com/Rejnszu/Newtool",
   },
   {
-    img: [require("../../assets/websites/rehasquad.webp")],
+    img: [
+      require("../../assets/websites/rehasquad/rehasquad.webp"),
+      require("../../assets/websites/rehasquad/rehasquad1.webp"),
+      require("../../assets/websites/rehasquad/rehasquad2.webp"),
+      require("../../assets/websites/rehasquad/rehasquad3.webp"),
+      require("../../assets/websites/rehasquad/rehasquad4.webp"),
+      require("../../assets/websites/rehasquad/rehasquad5.webp"),
+    ],
     title: "Rehasquad",
     href: "https://rehasquad.pl/",
     route: "rehasquad",
@@ -154,6 +196,21 @@ export const appProjects = [
   },
   {
     img: [
+      require("../../assets/apps/tictactoe/tictactoe.jpg"),
+      require("../../assets/apps/tictactoe/tictactoe1.webp"),
+    ],
+    title: "Tic Tac Toe",
+    href: "https://rejnszu.github.io/Tic-Tac-Toe-AI/",
+    route: "tic-tac-toe",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    description:
+      "Czym było by portfolio bez gry w kółko i krzyżyk. Zasad chyba nikomu nie trzeba tłumaczyć. Gra ma dwie wersje, jedna do grania z prawdziwym przeciwnikiem, druga do grania z komputerem i to ta wersja jest podlinkowana. Komputer o dziwo daje rade, aczkolwiek jak wiadomo liczba wygranych kombinacji nie jest zbyt wielka wiec łatwo go ograć.",
+    description_EN:
+      "What kind of portfolio would it be without tic tac toe game. The rules are obvious for everyone, I guess. Game has two versions, first to play with another player, second to play with computer and that's the version in the link.",
+    code: "https://github.com/Rejnszu/Tic-Tac-Toe-AI",
+  },
+  {
+    img: [
       require("../../assets/apps//tanks/tanks.webp"),
       require("../../assets/apps//tanks/tanks1.webp"),
       require("../../assets/apps//tanks/tanks2.webp"),
@@ -169,16 +226,16 @@ export const appProjects = [
     code: "https://github.com/Rejnszu/Tanks-game",
   },
   {
-    img: [require("../../assets/apps/tictactoe.jpg")],
-    title: "Tic Tac Toe",
-    href: "https://rejnszu.github.io/Tic-Tac-Toe-AI/",
-    route: "tic-tac-toe",
+    img: [require("../../assets/apps/fithits.webp")],
+    title: "FitHits",
+    href: "https://rejnszu.github.io/FitHits/",
+    route: "fithits",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     description:
-      "Czym było by portfolio bez gry w kółko i krzyżyk. Zasad chyba nikomu nie trzeba tłumaczyć. Gra ma dwie wersje, jedna do grania z prawdziwym przeciwnikiem, druga do grania z komputerem i to ta wersja jest podlinkowana. Komputer o dziwo daje rade, aczkolwiek jak wiadomo liczba wygranych kombinacji nie jest zbyt wielka wiec łatwo go ograć.",
+      "Aplikacja, która w oparciu o podane informacje oblicza dzienne zapotrzebowanie kaloryczne. Możliwe dodawanie posiłkow wraz z liczba spożytych kalorii oraz ćwiczeń wraz z liczba spalonych kalorii.",
     description_EN:
-      "What kind of portfolio would it be without tic tac toe game. The rules are obvious for everyone, I guess. Game has two versions, first to play with another player, second to play with computer and that's the version in the link.",
-    code: "https://github.com/Rejnszu/Tic-Tac-Toe-AI",
+      "App, that calculate daily calories demand, basing on given informations. It allows to add meals with calories intake and exercises with calories burnt.",
+    code: "https://github.com/Rejnszu/FitHits",
   },
   {
     img: [require("../../assets/apps/crypto.webp")],
@@ -202,18 +259,7 @@ export const appProjects = [
     description_EN: "Simple calculator.",
     code: "https://github.com/Rejnszu/React-Calculator",
   },
-  {
-    img: [require("../../assets/apps/fithits.webp")],
-    title: "FitHits",
-    href: "https://rejnszu.github.io/FitHits/",
-    route: "fithits",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    description:
-      "Aplikacja, która w oparciu o podane informacje oblicza dzienne zapotrzebowanie kaloryczne. Możliwe dodawanie posiłkow wraz z liczba spożytych kalorii oraz ćwiczeń wraz z liczba spalonych kalorii.",
-    description_EN:
-      "App, that calculate daily calories demand, basing on given informations. It allows to add meals with calories intake and exercises with calories burnt.",
-    code: "https://github.com/Rejnszu/FitHits",
-  },
+
   {
     img: [require("../../assets/apps/currency.webp")],
     title: "Currency Exchange",
