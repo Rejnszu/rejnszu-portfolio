@@ -11,10 +11,12 @@ import ContactPage from "./pages/Contact/ContactPage";
 import NotFound from "./components/UI/NotFound";
 import ProjectDetails from "./components/Portfolio/ProjectDetails/ProjectDetails";
 import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
-import { GlobalVariablesContext } from "./context/overall-context";
 import LanguageLoder from "./components/UI/LanguageLoder";
+
+import { GlobalVariablesContext } from "./context/overall-context";
 import { handleLanguageOnEnter } from "./helperFunctions/langugeHandler";
 let firstEnter = true;
+
 function App() {
   const location = useLocation();
   const [displayNavigation, setDisplayNavigation] = useState(false);

@@ -11,6 +11,7 @@ import SmallTextElement from "../../components/UI/SmallTextElement";
 import { GlobalVariablesContext } from "../../context/overall-context";
 
 import { POLISH__VERSION, ENGLISH__VERSION } from "./AboutMeLanguages";
+import ImageSection from "../../components/AboutMe/ImageSection";
 const AboutMe = () => {
   const { isMobile, isPolish } = useContext(GlobalVariablesContext);
   const content = isPolish ? POLISH__VERSION : ENGLISH__VERSION;
@@ -20,31 +21,7 @@ const AboutMe = () => {
       <main className={`section-padding default-page`}>
         <Heading text={content.header} />
         <div className={styles["about-me__informations"]}>
-          <div className={styles["informations__my-photo__wrapper"]}>
-            <div className={styles["image-inner-wrapper"]}>
-              <motion.img
-                initial={{ y: "-100px", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 1 }}
-                src={myPhoto}
-                className={styles["informations__my-photo"]}
-                alt="photo_of_me"
-              />
-              <motion.span
-                initial={{ y: "200px", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className={styles["background-blur"]}
-              />
-              <motion.span
-                initial={{ x: "-200px", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className={styles.box}
-              />
-            </div>
-          </div>
-
+          <ImageSection />
           <div className={styles["informations__description"]}>
             <DescriptionItem title={content.firstDescription.title} delay={1.2}>
               {content.firstDescription.description}

@@ -12,7 +12,7 @@ const ProjectItem = (props) => {
   const { isPolish } = useContext(GlobalVariablesContext);
   const { ref, inView } = useInView({
     threshold: 0,
-    rootMargin: "-100px 0px -100px 0px",
+    rootMargin: "0px 0px 0px 0px",
     triggerOnce: true,
   });
   return (
