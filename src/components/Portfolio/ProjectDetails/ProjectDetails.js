@@ -35,7 +35,7 @@ const ProjectDetails = () => {
       exit={{ y: "100%", opacity: 0 }}
       transition={{
         ease: "linear",
-        duration: 0.5,
+        duration: 0.6,
       }}
       style={{
         position: "absolute",

@@ -5,7 +5,7 @@ const Heading = (props) => {
   return (
     <motion.header
       key={props.name}
-      animate={{ scale: [0, 1.2, 1] }}
+      animate={{ scale: [0, 1.2, 1], opacity: [0, 1, 1] }}
       transition={{
         ease: "easeInOut",
         delay: 0.5,

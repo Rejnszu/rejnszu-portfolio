@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LanguageLoader.module.scss";
-const LanguageLoder = () => {
+const LanguageLoader = () => {
   return <div className={styles["language-loader"]}></div>;
 };
 
-export default LanguageLoder;
+export default LanguageLoader;

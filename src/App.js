@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Burger from "./components/Navigation/Burger";
-import Navigation from "./components/Navigation/Navigation";
 import AboutMePage from "./pages/AboutMe/AboutMePage";
 import PortfolioPage from "./pages/Portfolio/PortfolioPage";
 import PracticalSkillsPage from "./pages/PracticalSkills/PracticalSkillsPage";
@@ -10,23 +8,16 @@ import CodeSkillsPage from "./pages/CodeSkills/CodeSkillsPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import NotFound from "./components/UI/NotFound";
 import ProjectDetails from "./components/Portfolio/ProjectDetails/ProjectDetails";
-import ChangeLanguage from "./components/Navigation/Language/ChangeLanguage";
-import LanguageLoder from "./components/UI/LanguageLoder";
-
+import Layout from "./components/Layout/Layout";
 import { GlobalVariablesContext } from "./context/overall-context";
-import { handleLanguageOnEnter } from "./helperFunctions/langugeHandler";
+import { handleLanguageOnEnter } from "./utils/langugeHandler";
 let firstEnter = true;
 
 function App() {
   const location = useLocation();
-  const [displayNavigation, setDisplayNavigation] = useState(false);
-  const [displayLoader, setDisplayLoader] = useState(false);
   const { changeLanguageToEnglish, changeLanguageToPolish } = useContext(
     GlobalVariablesContext
   );
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
 
   useEffect(() => {
     if (firstEnter) {
@@ -36,29 +27,7 @@ function App() {
   }, [changeLanguageToPolish, changeLanguageToEnglish]);
 
   return (
-    <div className="page-wrapper">
-      {displayLoader && <LanguageLoder />}
-      <AnimatePresence>
-        {displayNavigation && (
-          <Navigation
-            key="navigation"
-            onClick={() => setDisplayNavigation((prevState) => !prevState)}
-          />
-        )}
-
-        {!displayNavigation && (
-          <React.Fragment>
-            <Burger
-              key="burger"
-              onClick={() => setDisplayNavigation((prevState) => !prevState)}
-            />
-            <ChangeLanguage
-              onClick={() => setDisplayLoader((prev) => !prev)}
-              key="language"
-            />
-          </React.Fragment>
-        )}
-      </AnimatePresence>
+    <Layout>
       <AnimatePresence>
         <Routes location={location} key={location.key}>
           {["/rejnszu-portfolio", "/omnie", "/"].map((path) => (
@@ -81,7 +50,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
-    </div>
+    </Layout>
   );
 }
 

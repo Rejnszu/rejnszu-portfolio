@@ -24,7 +24,7 @@ const CodeSkills = () => {
             })}
           </ul>
         </div>
-        <SmallTextElement delay={isMobile ? 0.5 : 2.5} flexPosition="center">
+        <SmallTextElement delay={isMobile ? 0.5 : 1} flexPosition="center">
           {content.secondTextElement}
         </SmallTextElement>
       </main>

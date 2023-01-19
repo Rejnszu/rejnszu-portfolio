@@ -142,6 +142,23 @@ export const webSiteProjects = [
 export const appProjects = [
   {
     img: [
+      require("../../assets/apps/puzzles/puzzles1.webp"),
+      require("../../assets/apps/puzzles/puzzles2.webp"),
+      require("../../assets/apps/puzzles/puzzles3.webp"),
+    ],
+    title: "Puzzles",
+    href: "https://rejnszu.github.io/Puzzles/",
+    route: "puzzles",
+    technologies: ["HTML", "SCSS", "JavaScript", "TypeScript", "React"],
+    description:
+      "Nie do końca wiem jak ta gra sie nazywa, wiec nazwijmy ją gra w puzle. Obecnie tylko wersja desktopowa, mimo iż wersja mobilna wyglada dobrze. Na chwilę obecną występuje jeden bug, polegający na tym iż nie zawsze wszystkie kafelki się pokazują po zmianie obrazka na nowy, w tym przypadku trzeba kliknąć na przycisk zmiany jeszcze raz.",
+    description_EN:
+      "Not sure how this game is called, but let it be a puzzle game. Currently only desktop version, even though it looks good on mobile. Currently known bug: Sometimes after finishing round and clicking the next image, not all tiles show up, in this case You have to click it again.",
+    code: "https://github.com/Rejnszu/Puzzles",
+    inProgress: true,
+  },
+  {
+    img: [
       require("../../assets/apps/blindi/blindi.webp"),
       require("../../assets/apps/blindi/blindi1.webp"),
       require("../../assets/apps/blindi/blindi2.webp"),

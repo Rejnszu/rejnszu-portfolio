@@ -1,8 +1,5 @@
 import React, { useRef } from "react";
-import {
-  scrollLeft,
-  scrollRight,
-} from "../../../../helperFunctions/scrollContainer";
+import { scrollLeft, scrollRight } from "../../../../utils/scrollContainer";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import { TbHandFinger } from "react-icons/tb";
 import Button from "../../../UI/Button";
