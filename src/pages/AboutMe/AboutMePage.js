@@ -2,11 +2,9 @@ import React, { useContext } from "react";
 import styles from "./AboutMe.module.scss";
 import AnimatedPages from "../../components/UI/AnimatedPages";
 import Heading from "../../components/UI/Heading";
-import myPhoto from "../../assets/others/myphoto.png";
 
 import DescriptionItem from "../../components/AboutMe/DescriptionItem";
 import CustomLink from "../../components/UI/CustomLink";
-import { motion } from "framer-motion";
 import SmallTextElement from "../../components/UI/SmallTextElement";
 import { GlobalVariablesContext } from "../../context/overall-context";
 
@@ -30,11 +28,7 @@ const AboutMe = () => {
               title={content.secondDescription.title}
               delay={1.7}
             >
-              {content.secondDescription.description__part1}{" "}
-              <CustomLink delay={isMobile ? 0.3 : 2} href={content.coverLetter}>
-                {content.secondDescription.description__part2}
-              </CustomLink>
-              .
+              {content.secondDescription.description__part1}
             </DescriptionItem>
             <DescriptionItem title={content.thirdDescription.title} delay={2.1}>
               {content.thirdDescription.description}
