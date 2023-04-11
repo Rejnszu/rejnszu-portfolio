@@ -142,6 +142,36 @@ export const webSiteProjects = [
 export const appProjects = [
   {
     img: [
+      require("../../assets/apps/resho/resho 1.webp"),
+      require("../../assets/apps/resho/resho 2.webp"),
+      require("../../assets/apps/resho/resho 3.webp"),
+      require("../../assets/apps/resho/resho 4.webp"),
+      require("../../assets/apps/resho/resho 5.webp"),
+      require("../../assets/apps/resho/resho 6.webp"),
+    ],
+    title: "Resho Automotive",
+    href: "https://resho-automotive.vercel.app/",
+    route: "resho",
+    technologies: [
+      "HTML",
+      "SCSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.JS",
+      "MongoDB",
+      "Rest API",
+      "Redux Toolkit",
+      "RTK Query",
+    ],
+    description:
+      "Fullstackowa aplikacja (hobbystyczna), dla firmy zajmującej się sprzedaża używanych samochodów. Początkowo miała być to ściśle wizualna strona, bez żadnych funkcjonalności, jednakże szybko za sprawą możliwości NextJs'a przerzuciłem się z szaty graficznej na rozbudowywanie zaplecza aplikacji. Aplikacja posiada na chwilę obecną możliwość zakładania oraz edycji kont,a także swój własny, jeśli można tak to nazwać CMS, podłączony pod baze danych, który pozwala na dodawanie, edycje oraz usuwanie ofert samochodów. W zamyśle ma to być moja próba odtworzenia i połączenia fukncjonalności prestashopu z użytecznością otomoto. Pod względem graficznym, jest sporo do poprawy, ale na to przyjdzie pora w swoim czasie. Obecnym celem jest zapewnienie wszystkich niezbędnych funkncjonalności.",
+    description_EN:
+      "A fullstack application (hobbyist), for a used car sales company. Initially, it was supposed to be a strictly visual website, without any functionality, however, quickly due to the capabilities of NextJs, I switched from graphic design to developing the backend of the application. The application currently has the ability to create and edit accounts, as well as its own CMS, if you can call it like this, connected to database, which allows you to add, edit and delete car offers. It is intended to be my attempt to recreate and combine the functionality of prestashop with the usability of otomoto. Graphically, there is a lot of room for improvement, but that will come in its own time. The current goal is to provide all the necessary functionalities.",
+    code: "https://github.com/Rejnszu/resho-automotive",
+  },
+  {
+    img: [
       require("../../assets/apps/puzzles/puzzles1.webp"),
       require("../../assets/apps/puzzles/puzzles2.webp"),
       require("../../assets/apps/puzzles/puzzles3.webp"),
@@ -155,7 +185,6 @@ export const appProjects = [
     description_EN:
       "Not sure how this game is called, but let it be a puzzle game. Currently only desktop version, even though it looks good on mobile. Currently known bug: Sometimes after finishing round and clicking the next image, not all tiles show up, in this case You have to click it again.",
     code: "https://github.com/Rejnszu/Puzzles",
-    inProgress: true,
   },
   {
     img: [
